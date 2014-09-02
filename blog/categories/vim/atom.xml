@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Vim | Wanayhtun]]></title>
+  <link href="http://wanay.github.io/blog/blog/categories/vim/atom.xml" rel="self"/>
+  <link href="http://wanay.github.io/blog/"/>
+  <updated>2014-09-02T15:11:12+06:30</updated>
+  <id>http://wanay.github.io/blog/</id>
+  <author>
+    <name><![CDATA[Wanayhtun]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Hello Vim]]></title>
+    <link href="http://wanay.github.io/blog/hello-vim/"/>
+    <updated>2014-09-02T14:33:40+06:30</updated>
+    <id>http://wanay.github.io/blog/hello-vim</id>
+    <content type="html"><![CDATA[<p><code>Vim</code> လို့ပြောလိုက်တာနဲ့တော်တော်များများက လက်ရှောင်သွားတတ်ပါတယ်။ဟုတ်လည်းဟုတ်ပါတယ် Vim ကိုစက်ထဲသွင်းပြီးသွားတာနဲ့ တစ်ခြား Text Editor တွေ IDE တွေလိုသုံးလို့မရသေးပါဘူး။ဒါဆို ဘာဖြစ်လို့ Vim ကိုသုံးနေကြသလဲ လို့မေးစရာရှိလာတယ်။အခုနောက်ပိုင်းမှာတော့ Sublime text တို့လို Text Editor ကအရမ်းကိုကောင်းလာကြပါပြီ။ဒါပေမယ့် Vim ကိုအခုထက်ထိဆက်ပြီးသုံးနေကြသေးတာလဲဆိုရင် အဓိက က Vim နဲ့ Terminal က လင်မယားဖြစ်နေက တစ်ချက် နောက်တစ်ခုက Movement ပါ။တစ်ကယ့်ကို မြန်မြန်ဆန်ဆန်နဲ့ကိုယ်သွားချင်တဲ့နေရာကို mouse မကိုင်ပဲနဲ့ keyboard မှာတင်အလုပ်ဖြစ်ပါတယ်။File တွေ navigate လုပ်ဖို့ mouse ကိုသွားသွားကိုင်ပြီး Click နေရတဲ့ဒုက္ခက ကင်းဝေးပါလိမ့်မယ်။ဒါကနောက်ပိုင်း အကျင့်ရသွားရင် တစ်ကယ့်ကိုသိသိသာသာကြီး productive ဖြစ်ပါလိမ့်မယ်။နောက်အရေးကြီးတာတစ်ခု Mode ပါ။ Vim မှာdefault က command mode ပါ။တစ်ကယ်လို့ Code တွေစပြီးရေးမယ်ဆိုရင်တော့ keyboard က <code>i</code> ကိုနှိပ်ပြီး <code>Insert mode</code> မှာ Code တွေစရေးလို့ရပါပြီ။တစ်ကယ်လို့ ရေးပြီးခဲ့ရင် keyboard က <code>ESC</code> key ကိုနှိပ်ပြီး Normal mode( Command mode) ကိုပြန်ထွက်နိုင်ပါတယ်။အဲဒီ Command mode မှာဘာတွေလုပ်လို့ရသလဲဆိုရင် File တွေ navigate လုပ်ဖို့နဲ့ cursor ရွေ့ဖို့ File  သိမ်းဖို့ Exit လုပ်ဖို့တွေအတွက်သုံးပါတယ်။အရေးကြီးမှတ်ထားရမှာကတော့ Vim မှာ တစ်ခြား mode ကနေ Command mode ကိုပြောင်းဖို့ အမြဲတမ်း <code>ESC</code> key နှိပ်ပေးရပါမယ်။ဒီနေရာမှာတော့ mode တွေ Movement အကြောင်းအသေးစိတ်မရေးတော့ပါဘူး။အပိုင်း တစ် တို့ နှစ်တို့ရေးလိုက်တာထက်စာရင် တစ်ပိုင်း တစ်ပိုင်းစီခေါင်းစဉ်အလိုက်ရေးလိုက်ရင် လာဖတ်တဲ့သူကသိချင်တဲ့အကြောင်းကိုသာ ရှာဖတ်လိုက်ရင် အချိန်ကုန်သက်သာမယ်ထင်လို့ပါ။နောက်အပိုင်းတွေမှာ တော့ <code>Movement</code>,<code> Mode</code>,<code> Vimrc</code>, <code>install plugin</code> အဲလိုတွေအပိုင်းလိုက် ခွဲရေးမယ်လို့တော့ စိတ်ကူးထားတာပဲ။ :D :D :D   အခုတော့နောက်ဆုံးအနေနဲ့ Vim မှာ save လုပ်တာနဲ့ exit လုပ်တာတွေဆက်ပါအုံးမယ်။ Vim မှာ save လုပ်ဖို့အရမ်းလွယ်ပါတယ်။<code> Ctrl + s </code> လုပ်လိုက်ရင်ရရောလို့တော့ မထင်ပါနဲ့။နောက်ဆုံးရောက်နေတဲ့ <code> Mode</code> က Command mode ဖြစ်ဖို့တော့လိုပါတယ်။မဟုတ်လည်း သေချာအောင် <code>ESC</code> တစ်ချက်လောက် နှိပ်လိုက်ရင်လည်းဖြစ်ပါတယ်။ဒါဆို Command mode မှာသေချာပြီဆိုရင်တော့ <code>:w </code>  လို့ရိုက်လိုက်ရင် save လုပ်သွားမှာပါ။<code>w</code> ဆိုတာက write ကိုဆိုလိုတာပါ ဒါဆိုရင် Vim ကနေထွက်ချင်ရင်ရော လွယ်ပါတယ်။ <code>:q </code>   ဆိုရင်ထွက်သွားမှာပါ။တစ်ကယ်လို့ save ပြီးတော့ ထွက်မယ်ဆိုရင်တော့ <code> :wq </code> လို့ရိုက်လိုက်တာနဲ့အဆင်ပြေမှာပါ။ဒါမှမဟုတ် လက်ရှိဖွင့်ထားတာကို save မလုပ်ပဲ ထွက်ချင်တယ်ဆိုရင်တာ့ <code> :q! </code> လို့ရိုက်လိုက်တာနဲ့ Vim ကနေ save မလုပ်ပဲထွက်သွားမှာပါ။အခုတော့ ဒီလောက်နဲ့ပဲ နားပါအုံးမယ်။</p>
+]]></content>
+  </entry>
+  
+</feed>
