@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Ruby | Wanayhtun]]></title>
+  <link href="http://wanay.github.io/blog/blog/categories/ruby/atom.xml" rel="self"/>
+  <link href="http://wanay.github.io/blog/"/>
+  <updated>2014-11-05T06:19:27+06:30</updated>
+  <id>http://wanay.github.io/blog/</id>
+  <author>
+    <name><![CDATA[Wanayhtun]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Hello Ruby]]></title>
+    <link href="http://wanay.github.io/blog/hello-ruby/"/>
+    <updated>2014-10-05T04:58:15+06:30</updated>
+    <id>http://wanay.github.io/blog/hello-ruby</id>
+    <content type="html"><![CDATA[<p>Ruby ကိုမလေ့လာခင်တစ်ခြားလိုအပ်ချက်တွေ အများကြီးမရှိပါဘူး။HTML, CSS နဲ့ Javascript ကိုသိထားရင်စပြီးလေ့လာလို့ရပါပြီ။Ruby က Object Oriented Scripting language တစ်ခုဖြစ်ပါတယ်။Ruby ကို 2003 ခုနှစ်လောက်မှာ ဂျပန်လူမျိုး Yukihiro Matsumoto ကစတင်ပြီးဖန်တီးခဲ့ပါတယ်။သူ့ကိုတော့ Online မှာ Matz လို့လူသိများပါတယ်။ဒါပေမယ့်လည်း စစခြင်းမှာ Ruby က ဒီလောက်နာမည်မကြီးခဲ့ပါဘူး။PHP နဲ့ ASP နဲ့ကသာ Web ကိုအဓိကကြီးစိုးနေခဲ့တာပါ။2004 ခုနှစ်လောက်မှာတော့ David Heinemeir Hansson က အခုလူသိများကြတဲ့ Rails ဆိုတဲ့ Framework ကိုစတင်ဖန်တီးခဲ့ပါတယ်။Rails ဆိုတာက Ruby programming language ကိုအသုံးချပြီးဖန်တီးထားတဲ့ Ruby Framwork တစ်ခုပါ။Rails ရဲ့ MVC architecture ဟာအရမ်းကိုအောင်မြင်ခဲ့ပြီးနောက်ပိုင်းမှာ PHP Framework တစ်ချို့နဲ့ ASP ကပါပြန်ပြီးအတုယူခဲ့ကြရပါတယ်။အခုဆို PHP မှာနာမည်ကြီးနေတဲ့ Framework တစ်ခုဖြစ်တဲ့ Laravel ကလည်း Rails ကိုတုပဖန်တီးထားပါသေးတယ်။Ruby ရဲ့အားသာချက်က ရေးရတာ ပေါ့ပါးလွယ်ကူတာကြောင့် web application တစ်ခုကိုမြန်မြန်ဆန်ဆန်ဖန်တီးနိုင်ပါတယ်။ဒါကြောင့်လည်း Startup တော်တော်များများက Ruby နဲ့စကြတာများပါတယ်။Ruby မှာ Rails အပြင်နောက်ထပ်နာမည်ကြီး Framework ​​တွေရှိပါသေးတယ်။တစ်ချို့က Ruby လို့ဆိုလိုက်တာနဲ့ Rails နဲ့တွဲပြီး Ruby on Rails(ROR)လို့သာအသိများကြပါတယ်။Rails ကတစ်ကယ့်ကိုပြည့်စုံတဲ့ Framework ဆိုပေမယ့် project သေးသေးလေးတွေအတွက်တော့သိပ်အဆင်မပြေပါဘူး။ အဲဒါကြောင့် Sinatra ဆိုတဲ့ Framework ကိုလည်းလူသုံးများကြပါတယ်။အခုနောက်ပိုင်း နာမည်ကြီးနေတဲ့ Node js Framewok တစ်ခုဖြစ်တဲ့ Express js ဆိုရင်လည်း Sinatra ကိုတုပထားပါတယ်။Ruby မှာ Sinatra လိုမျိုးပေါ့ပါးတဲ့ Framework တစ်ခုဖြစ်တဲ့ Roda ဆိုတာကလည်း အခုနောက်ပိုင်း နာမည်ရလာပါတယ်။Ruby Framework တွေကိုမလေ့လာခင် Ruby ကိုအရင်လေ့လာထားမှသာ Rails နဲ့ တစ်ခြား Framework တွေလေ့လာရာမှာလွယ်ကူမှာဖြစ်ပါတယ်။။ဒီတော့ Ruby အရင်ဆုံးလေ့လာဖို့အတွက်စက်မှာ install လုပ်ပါမယ်။ဒီနေရာမှာ windows မှာ install လုပ်တာကိုထည့်မပြောတော့ပါဘူး။တစ်ကယ်တော့ Ruby ကိုစလေ့လာတော့မယ်ဆိုရင် Mac မှာဖြစ်ဖြစ် Linux Distro တစ်ခုခုမှာလေ့လာတာအကောင်းဆုံးပါပဲ။အခုအရင်ဆုံး RVM လို့ခေါ်တဲ့ Ruby Version Manager ကို အရင်ဆုံး install လုပ်ပါမယ်။အဲဒီတော့ Terminal မှာ အခုလိုရိုက်လိုက်ပါ။
+ <div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>install rvm and ruby </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>curl –sSL &lt;a href="https://get.rvm.io">https://get.rvm.io&lt;/a> | bash –s stable &ndash;ruby</span></code></pre></td></tr></table></div></figure></notextile></div>
+အခုဆိုရင်ကျွန်တော်တို့ စက်မှာ rvm နဲ့ ruby ကို install လုပ်ပြီးသွားပါပြီ။ဟမ် အဲလောက်တောင်လွယ်လား ဆိုရင်ဟုတ်ပါတယ်။အဲလောက်ကိုလွယ်ပါတယ်။
+<code> ruby –v </code>
+လို့ ရိုက်ကြည့်လိုက်ရင် ruby ရဲ့လက်ရှိ version ကိုဖော်ပြပေးပါလိမ့်မယ်။ဒီစာရေးနေတဲ့ အချိန်မှာတော့ ruby stable version ကတော့ 2.1.3 ဖြစ်ပါတယ်။တစ်ကယ်လို့ ကျွန်တော်တို့လက်ရှိ project ကို ruby 2.1.3 နဲ့အလုပ်လုပ် နေချိန်မှာ ruby version တစ်ခုအသစ်ထွက်လာလို့ စမ်းသပ်ချင်ရင်လည်း rvm ကိုသုံးထားတဲ့ အတွက် ruby version တွေကိုအဆင်ပြေပြေနဲ့သုံးနိုင်ပါလိမ့်မယ်။လောလောဆယ် <code> rvm list </code> လို့ရိုက်လိုက်ရင် စက်ထဲမှာသွင်းထားတဲ့ ruby stable version ကိုပြပေးပါလိမ့်မယ်။တစ်ကယ်လို့နောက်ထပ် ruby version တွေသွင်းချင်ရင်တော့ <code> rvm install (ruby version number) </code> ဆိုပြီးအသစ်တွေသွင်းနိုင်ပါတယ်။ဥပမာ ruby version number ဆိုတာကတော့ <code> rvm install 2.1.2 </code>  ဒါဆိုရင်တော့ ruby version 2.1.2 ကို install လုပ်ပေးပါလိမ့်မယ်။ အခုဆို <code> rvm list </code>လို့ရိုက်လိုက်တာနဲ့ <code> ruby 2.1.2 </code>နဲ့ <code> ruby 2.1.3 </code>ဆိုပြီးပြပေးပါလိမ့်မယ်။ ဥပမာအနေနဲ့ <code> rvm use 2.1.2  </code>ဒါဆိုကျွန်တော်တို့က ruby 2.1.2 ကိုသုံးမယ်လို့ပြောလိုက်တာပါ။<code> ruby –v  </code>ဆိုပြီးရိုက်လိုက်ရင် ruby version က 2.1.2 ဖြစ်နေပါလိမ့်မယ်။ဒါပေမယ့် အခုတော့ကျွန်တော်တို့ 2.1.3 ကိုပဲသုံးမှာဖြစ်တဲ့အတွက် <code> rvm use 2.1.3 </code>လို့ပဲရိုက်လိုက်ပါ။ဒါဆိုရင် <code> ruby –v </code> ဆိုတာနဲ့ ruby version က 2.1.3 ဖြစ်သွားပါပြီ။ဒီနေရာမှာ ကျွန်တော်တို့ rails ကိုအသုံးမပြုသေးပေမယ့်တစ်ခါတည်း install လုပ်ထားခဲ့ပါမယ်။
+<div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>install rails </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>gem install rails</span></code></pre></td></tr></table></div></figure></notextile></div>
+ဒါဆိုရင် တော့ rails ရဲ့နောက်ဆုံး stable version ကို install လုပ်ပေးသွားပါလိမ့်မယ်။အရင်ဆုံး Ruby ကိုစပြီးစမ်းဖို့ Terminal မှာ                           <code> irb </code> လို့ရိုက်လိုက်ပါ။ irb ဆိုတာကတော့ interactive Ruby ကိုဆိုလိုတာပါ။ဒါဆိုရင်ကျွန်တော်တို့ ruby code တွေကိုစပြီးစမ်းလို့ရပါပြီ။Programmer တွေထုံးစံအတိုင်း Hello World! နဲ့ပဲစကြတာပေါ့။သိပ်မခက်ပါဘူး။</p>
+
+<p><div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>hello.rb </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+</pre></td><td class='code'><pre><code class='rb'><span class='line'><span class="o">&lt;</span><span class="sr">/p&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="sr">&lt;blockquote&gt;&lt;blockquote&gt;&lt;p&gt;puts “Hello World!”</span>
+</span><span class='line'><span class="sr">=&gt;”Hello World!”</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div></p></blockquote></blockquote>
+
+<p>လို့ရိုက်လိုက်တာနဲ့ Hello World! ဆိုတာကို output ထုတ်ပေးပါလိမ့်မယ်။ Ruby မှာ တစ်ခုခု output ထုတ်ပြချင်တဲ့အခါမှာ puts ကိုသုံးပါတယ်။” “ ကြားထဲကထည့်သမျှကို String data type လို့သတ်မှတ်ပါတယ်။တစ်ကယ်လို့ irb ကနေထွက်ချင်ရင်တော့ quit ပဲဖြစ်ဖြစ် exit ဖြစ်ဖြစ်ရိုက်ပြီး ထွက်လို့ရပါတယ်။</p>
+]]></content>
+  </entry>
+  
+</feed>

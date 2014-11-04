@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Angularjs | Wanayhtun]]></title>
+  <link href="http://wanay.github.io/blog/blog/categories/angularjs/atom.xml" rel="self"/>
+  <link href="http://wanay.github.io/blog/"/>
+  <updated>2014-11-05T06:19:27+06:30</updated>
+  <id>http://wanay.github.io/blog/</id>
+  <author>
+    <name><![CDATA[Wanayhtun]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Angularjs Fundamental]]></title>
+    <link href="http://wanay.github.io/blog/angularjs-fundamental/"/>
+    <updated>2014-09-08T10:32:59+06:30</updated>
+    <id>http://wanay.github.io/blog/angularjs-fundamental</id>
+    <content type="html"><![CDATA[<p>Anuglar js ဆိုတာကတော့2009 ခုနှစ်မှာ Miško Hevery နဲ့Adam Abrons တို့ကစပြီး Declarative web-applications without server ဆိုပြီး စလုပ်လိုက်တဲ့နောက်Google က support ပေးပြီး MIT လိုင်စင်နဲ့ Opensource အနေနဲ့နာမည်ရလာခဲ့ပါတယ်။Angular ဆိုတာ javascript နဲ့ရေးထားတဲ့ client-sideနည်းပညာတစ်ခုပါ။Angular ကိုသုံးပြီး အရင်ကရှိထားတဲ့ HTML,CSS,Javascript တွေနဲ့Web app တွေကိုအရင်ကထက် ပိုပြီးမြန်မြန်ဆန်ဆန်လွယ်ကူအောင်ဖန်တီးနိုင်လာစေပါလိမ့်မယ်။ရှင်းအောင်ပြောရရင်Angular ဆိုတာက web application တွေကိုဖန်တီးဖို့ Opensource ပေးထားတဲ့ Frameworkတစ်ခုလို့ပဲပြောရပါမယ်။ဒီနေရာမှာ Framework နဲ့ Libraryတွေကိုမရောထွေးစေချင်ပါဘူး။Web app တွေဖန်တီးဖို့အတွက် တစ်ခြား Ember တို့Backbone တို့ကလည်းနာမည်ကြီး Framework တွေပါပဲ။အခုတော့ Angular အကြောင်းပဲဆက်ရရင်Anuglar ကို SPA(Single page application) တွေအတွက်သုံးကြပါတယ်။Angular community  တွေကတော့ ဒီလိုပြောကြပါတယ်။
+ “structural framework for dynamic web apps.”   Angular ကိုအများက MVW(Model View Whatever) Framework လို့လည်းခေါ်ကြပါတယ်။Whateverဆိုတာကတော့ MVC(Model View Controller) ပဲဖြစ်ဖြစ် knockout js လို MVVM (Model View View-Model)ဖြစ်ဖြစ်သုံးလို့ရပါတယ်။ဒီနေရာမှာ ထပ်ပြောချင်တာက Client-side MVC နဲ့ Server-side MVC Concept တွေကိုလည်းမရောထွေးစေချင်ပါဘူး။အခုကစလို့လက်တွေ့ပိုင်းကိုပဲဆက်လေ့လာကြည့်ကြပါမယ်။အရင်ဆုံး Localhost မှာစမ်းဖို့ Anuglarjs.org ကိုသွားပြီး Download ယူလိုက်ပါ။အခုလောလောဆယ် Stable Version ကတော့1.2.17 ပါ။လောလောဆယ် စမ်းဖို့အတွက် Minified ကိုရွေးပြီး Download ချလိုက်ပါ။
+ဒါဆိုရင်တော့ကျွန်တော်တို့စပြီးစမ်းလို့ရပါပြီ။Ok, စပြီးစမ်းဖို့အတွက်မိမိစိတ်ကြိုက် Text Editorတစ်ခုကိုသုံးပါ။ကျွန်တော်ကတော့ Sublime Text 3 ကိုသုံးပါမယ်။ကျွန်တော်တို့ထုံးစံအတိုင်း Hello World ဆိုတဲ့ Program လေးကနေစပြီးရေးပါမယ်။အဲဒီတော့ အခုလိုရေးလိုက်ပါတယ်။</p>
+
+<p><div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>index.html </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+</pre></td><td class='code'><pre><code class='html'><span class='line'><span class="ni">&amp;lt;</span>!DOCTYPE html&gt;
+</span><span class='line'><span class="nt">&lt;html</span> <span class="na">ng-app</span><span class="nt">&gt;</span>
+</span><span class='line'><span class="nt">&lt;head&gt;</span>
+</span><span class='line'>    <span class="nt">&lt;meta</span> <span class="na">charset=</span><span class="s">&quot;UTF-8&quot;</span><span class="nt">&gt;</span>
+</span><span class='line'>    <span class="nt">&lt;title&gt;</span>Angular Fundamental<span class="nt">&lt;/title&gt;</span>
+</span><span class='line'>    <span class="nt">&lt;script </span><span class="na">type=</span><span class="s">&quot;text/javascript&quot;</span> <span class="na">src=</span><span class="s">&quot;angular.min.js&quot;</span><span class="nt">&gt;&lt;/script&gt;</span>
+</span><span class='line'><span class="nt">&lt;/head&gt;</span>
+</span><span class='line'><span class="nt">&lt;body&gt;</span>
+</span><span class='line'>    <span class="nt">&lt;div</span> <span class="na">ng-controller=</span><span class="s">&quot;Ctrl&quot;</span><span class="nt">&gt;</span>
+</span><span class='line'>        <span class="nt">&lt;h1</span> <span class="na">ng-bind=</span><span class="s">&quot;Hello&quot;</span><span class="nt">&gt;&lt;/h1&gt;</span>
+</span><span class='line'>    <span class="nt">&lt;/div&gt;&lt;/p&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="nt">&lt;pre&gt;&lt;code&gt;</span><span class="ni">&amp;lt;</span>script<span class="ni">&amp;gt;</span>
+</span><span class='line'>    var Ctrl = function($scope){
+</span><span class='line'>        $scope.Hello = &quot;Hello World!&quot;;
+</span><span class='line'>    }
+</span><span class='line'><span class="ni">&amp;lt;</span>/script<span class="ni">&amp;gt;</span>
+</span><span class='line'><span class="nt">&lt;/code&gt;&lt;/pre&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="nt">&lt;p&gt;&lt;/body&gt;</span>
+</span><span class='line'><span class="nt">&lt;/html&gt;</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+
+<p>သိပ်ပြီးတော့ထူးထူးဆန်းဆန်းမဟုတ်ပါဘူး။အပေါ်ဆုံးကနေစပြီးပြောရရင် &lsquo;<html ng-app>&rsquo;  ဆိုတာမှာ ကျွန်တော်တို့ angular ကို ဒီ HTML ထဲမှာသုံးပါမယ်ဆိုတာကိုကြေငြာပေးလိုက်တာပါ။နောက် head ထဲမှာ angular ရှိတဲ့နေရာကို ချိတ်ပေးလိုက်ပါတယ်။ဒီစာကိုဖတ်နေတဲ့သူက Javascript အခြေခံကိုနားလည်ပြီးသား ဖြစ်မယ်လို့ထင်ပါတယ်။နောက်ကျွန်တော်တို့ div ထဲမှာ Ctrl ဆိုတဲ့ Controller တစ်ခုဖန်တီးလိုက်ပါတယ်။နာမည်က ကြိုက်တဲ့နာမည်ပေးလို့ရပါတယ်။နောက်ထပ် h1  ထဲမှာ  &lsquo;ng-bind=”Hello”&rsquo;  ဆိုပြီးတော့ data တွေကို bind လုပ်ထားပါတယ်။။နောက်ထပ်Two way data binding တွေဆက်လေ့လာရင် သဘောပေါက်လာပါလိမ့်မယ်။အဲဒါဆိုရင် HTML အပိုင်းကပြီးသွားပါပြီ။နောက်ထပ်Script မှာ Ctrl လို့နာမည်ပေးထားတဲ့ Controller ကို variable အနေနဲ့သတ်မှတ်ပြီး Function တစ်ခုအဖြစ်ကြေငြာလိုက်ပါတယ်။ အဲဒီမှာ $scope ဆိုတာကို Controller နဲ့ View ကိုဆက်စပ်ပေးတယ်လို့အလွယ်မှတ်ထားစေချင်ပါတယ်။နောက်ကျွန်တော်တို့ &lsquo;ng-bind&rsquo; လုပ်ဖို့ Hello လို့နာမည်ပေးထားခဲ့လို့ အခု &lsquo;$scope.Hello&rsquo; ဆိုပြီးကျွန်တော်တို့ Output ပြချင်တဲ့ &lsquo;Hello World!&rsquo; ဆိုပြီးရေးလိုက်ပါတယ်။ဒါဆိုရင်Browser မှာသွားစမ်းကြည့်ရင် Hello World! ဆိုတာကိုမြင်ရပါပြီ။တစ်ချို့ကတော့ အပေါ်မှာရေးထားတဲ့Script ကိုတစ်မျိုးဖြစ်နေနိုင်ပါတယ်။အခုလိုမျိုးရေးလည်းရပါတယ်။</p>
+
+<p><div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>javascript </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;script>
+</span><span class='line'>        function Ctrl($scope){
+</span><span class='line'>            $scope.Hello = "Hello World!";
+</span><span class='line'>        }
+</span><span class='line'>&lt;/script>
+</span><span class='line'>
+</span><span class='line'>
+</span><span class='line'>&lt;p></span></code></pre></td></tr></table></div></figure></notextile></div></p>
+
+<p>အခုနောက်ထပ် Two way data binding ကိုဆက်ပြီးလေ့လာကြည့်ကြပါမယ်။</p>
+
+<p><div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>index.html </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+</pre></td><td class='code'><pre><code class='html'><span class='line'><span class="ni">&amp;lt;</span>!DOCTYPE html&gt;
+</span><span class='line'><span class="nt">&lt;html</span> <span class="na">ng-app</span><span class="nt">&gt;</span>
+</span><span class='line'><span class="nt">&lt;head&gt;</span>
+</span><span class='line'>    <span class="nt">&lt;meta</span> <span class="na">charset=</span><span class="s">&quot;UTF-8&quot;</span><span class="nt">&gt;</span>
+</span><span class='line'>    <span class="nt">&lt;title&gt;</span>Angular Fundamental<span class="nt">&lt;/title&gt;</span>
+</span><span class='line'>    <span class="nt">&lt;script </span><span class="na">type=</span><span class="s">&quot;text/javascript&quot;</span> <span class="na">src=</span><span class="s">&quot;angular.min.js&quot;</span><span class="nt">&gt;&lt;/script&gt;</span>
+</span><span class='line'><span class="nt">&lt;/head&gt;</span>
+</span><span class='line'><span class="nt">&lt;body&gt;</span>
+</span><span class='line'>    <span class="nt">&lt;div</span> <span class="na">ng-controller=</span><span class="s">&quot;Ctrl&quot;</span><span class="nt">&gt;</span>
+</span><span class='line'>        <span class="nt">&lt;label&gt;</span>Name: <span class="nt">&lt;label&gt;</span>
+</span><span class='line'>        <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">&quot;text&quot;</span> <span class="na">ng-model=</span><span class="s">&quot;name&quot;</span> <span class="na">placeholder=</span><span class="s">&quot;What&#39;s your name?&quot;</span> <span class="nt">/&gt;</span>
+</span><span class='line'>        <span class="nt">&lt;h1&gt;</span> Hello  !<span class="nt">&lt;/h1&gt;</span>
+</span><span class='line'>    <span class="nt">&lt;/div&gt;&lt;/p&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="nt">&lt;pre&gt;&lt;code&gt;</span><span class="ni">&amp;lt;</span>script<span class="ni">&amp;gt;</span>
+</span><span class='line'>    var Ctrl = function($scope){
+</span><span class='line'>
+</span><span class='line'>    }
+</span><span class='line'><span class="ni">&amp;lt;</span>/script<span class="ni">&amp;gt;</span>
+</span><span class='line'><span class="nt">&lt;/code&gt;&lt;/pre&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="nt">&lt;p&gt;&lt;/body&gt;</span>
+</span><span class='line'><span class="nt">&lt;/html&gt;</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+
+<p>အပေါ်မှာ ရေးခဲ့တာနဲ့သိပ်ပြီးတော့မကွာပါဘူး။Label တစ်ခုနဲ့ input box တစ်ခုထပ်ထည့်ထားပါတယ်။ကျွန်တော်တို့ input type ကို text လို့ထားပြီးတော့ ng-model မှာ name လို့ကြေငြာလိုက်ပါတယ်။နောက်ထပ် ကျွန်တော်တို့ရိုက်လိုက်တဲ့စာသားတွေပေါ်ဖို့အတွက် h1 tag ကိုသုံးလိုက်ပါတယ်။h1 tag ထဲမှာ Hello ဆိုတာက user ကရိုက်လိုက်တဲ့ နာမည်အရှေ့မှာ ပေါ်စေချင်လို့ရေးထားတာပါ။တစ်ခြားဘာမှမဟုတ်ပါဘူး။နောက်ပြီးတော့ ဆိုတာကတော့ Data bind လုပ်ထားတာပါ။ပထမတုန်းကလိုမျိုး ng-bind ဆိုပြီးမကြေငြာပဲနဲ့Two way data binding အတွက် သုံးထားတာပါ။တစ်ကယ်အလုပ်မလုပ် Browser မှာသွားစမ်းကြည့်ရင်input ထဲကိုဝင်လာသမျှ Data တွေဟာ အောက်က Data bind လုပ်ထားတဲ့ h1 tag ထဲမှာမြင်နေရတာကိုတွေ့ရမှာပါ။
+Two waydata binding နဲ့ပတ်သက်လို့ပြောစရာတွေကျန်ပါသေးတယ်။ စာအရမ်းရှည်သွားမှာဆိုးလို့ဒီလောက်နဲ့ပဲနားပါအုံးမယ်။</p>
+]]></content>
+  </entry>
+  
+</feed>

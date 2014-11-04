@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Javascript | Wanayhtun]]></title>
   <link href="http://wanay.github.io/blog/blog/categories/javascript/atom.xml" rel="self"/>
   <link href="http://wanay.github.io/blog/"/>
-  <updated>2014-11-04T20:20:48+06:30</updated>
+  <updated>2014-11-05T06:19:27+06:30</updated>
   <id>http://wanay.github.io/blog/</id>
   <author>
     <name><![CDATA[Wanayhtun]]></name>
@@ -20,7 +20,8 @@
     <id>http://wanay.github.io/blog/hello-javascript</id>
     <content type="html"><![CDATA[<p>Javascript ကို ၁၉၉၅ ခုနစ် မေလ မှာ  <a href="https://brendaneich.com/">Brendan Eich</a> က Netscape web browser အတွက် စတင် တီထွင်ခဲ့ပါတယ်။(အခုတော့ Mozilla ဖြစ်သွားပါပြီ။)စစခြင်းမှာတော့  Mocha လို့နာမည်ပေးခဲ့ပါတယ်။စက်တင်ဘာလောက်မှာတော့ LiveScript ဆိုပြီးနာမည်ထပ် ပြောင်းခဲ့ပါတယ်။အဲဒီနောက် ဒီဇင်ဘာမှာတော့ Sun ရဲ့ လိုင်စင် trademark ကိုယူပြီး Javascript ဆိုပြီးဖြစ်လာ ခဲ့ပါတယ်။Javascript က Object Oriented ဖြစ်တဲ့ Scripting Language တစ်ခုဖြစ်ပါတယ်။ဒီနေရာမှာတော့ အကျယ်မရှင်းတော့ပါဘူး။နောက်အခန်းတွေကျမှ တစ်ဖြည်းဖြည်းနားလည်လာလိမ့်မယ်။ အခုတော့ Hello World  program လေးကနေ ပဲစကြတာပေါ့။Javascript ကို Html ထဲမှာ ထည့်သွင်းအသုံးပြုဖို့</p>
 
-<p><div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<p><div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>&ldquo;javascript&rdquo; </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
 <span class='line-number'>4</span>
@@ -30,21 +31,21 @@
 <span class='line-number'>8</span>
 <span class='line-number'>9</span>
 <span class='line-number'>10</span>
-</pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="o">&lt;</span><span class="err">/p&gt;</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>&lt;/p>
 </span><span class='line'>
-</span><span class='line'><span class="o">&lt;</span><span class="nx">script</span> <span class="nx">type</span><span class="o">=</span><span class="s2">&quot;text/javascript&quot;</span><span class="o">&gt;</span>
+</span><span class='line'>&lt;script type="text/javascript">
 </span><span class='line'>
-</span><span class='line'><span class="cm">/* code here */</span>
+</span><span class='line'>    /* code here */
 </span><span class='line'>
-</span><span class='line'><span class="o">&lt;</span><span class="err">/script&gt;</span>
+</span><span class='line'>&lt;/script>
 </span><span class='line'>
 </span><span class='line'>
-</span><span class='line'><span class="o">&lt;</span><span class="nx">p</span><span class="o">&gt;</span>
-</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+</span><span class='line'>&lt;p></span></code></pre></td></tr></table></div></figure></notextile></div></p>
 
 <p> ထဲမှာသုံးပြီးရေးပါတယ်။</p>
 
-<p><div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<p><div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>&ldquo;javascript&rdquo; </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
 <span class='line-number'>4</span>
@@ -54,17 +55,16 @@
 <span class='line-number'>8</span>
 <span class='line-number'>9</span>
 <span class='line-number'>10</span>
-</pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="o">&lt;</span><span class="err">/p&gt;</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>&lt;/p>
 </span><span class='line'>
-</span><span class='line'><span class="o">&lt;</span><span class="nx">script</span> <span class="nx">type</span><span class="o">=</span><span class="s2">&quot;text/javascript&quot;</span><span class="o">&gt;</span>
+</span><span class='line'>&lt;script type="text/javascript">
 </span><span class='line'>
-</span><span class='line'><span class="nb">document</span><span class="p">.</span><span class="nx">write</span><span class="p">(</span><span class="s2">&quot;Hello World&quot;</span><span class="p">);</span>
+</span><span class='line'>    document.write("Hello World");
 </span><span class='line'>
-</span><span class='line'><span class="o">&lt;</span><span class="err">/script&gt;</span>
+</span><span class='line'>&lt;/script>
 </span><span class='line'>
 </span><span class='line'>
-</span><span class='line'><span class="o">&lt;</span><span class="nx">p</span><span class="o">&gt;</span>
-</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+</span><span class='line'>&lt;p></span></code></pre></td></tr></table></div></figure></notextile></div></p>
 
 <p>အဲဒါကို run လိုက်ရင် Hello World ဆိုတာကို browser မှာမြင်ရမှာပါ။ ဆိုတာက client ကို output ထုတ်ပြချင်တဲ့အခါမှာသုံးပါတယ်။နောက် javascript code တွေထဲမှာလည်း Html tag တွေထည့်ရေးလို့ရပါတယ်။</p>
 
