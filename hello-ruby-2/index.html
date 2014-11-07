@@ -1,0 +1,319 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Hello Ruby 2 - Wanayhtun</title>
+  <meta name="author" content="Wanayhtun">
+
+  
+  <meta name="description" content="အခုကျွန်တော်တို့ နောက်ထပ်အနေနဲ့ ပေါင်း နှုတ် မြှောက် စား တွေလုပ်ကြည့်ရအောင်ပါ။ irb ထဲမှာ "irb" 1
+2
+>>35 + 289
+=>324 လို့ရိုက်လိုက်ရင် 324 ဆိုတာကို &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://wanay.github.io/blog/hello-ruby-2">
+  <link href="/blog/favicon.png" rel="icon">
+  <link href="/blog/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <link href="/blog/atom.xml" rel="alternate" title="Wanayhtun" type="application/atom+xml">
+  <script src="/blog/javascripts/modernizr-2.0.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script>!window.jQuery && document.write(unescape('%3Cscript src="./javascripts/libs/jquery.min.js"%3E%3C/script%3E'))</script>
+  <script src="/blog/javascripts/octopress.js" type="text/javascript"></script>
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="//fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="//fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/blog/">Wanayhtun</a></h1>
+  
+    <h2>Some of my Experiences</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/blog/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="https://www.google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:wanay.github.io/blog" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/blog/">Blog</a></li>
+  <li><a href="/blog/blog/archives">Archives</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+      <h1 class="entry-title">Hello Ruby 2</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2014-11-05T22:22:27+06:30'><span class='date'><span class='date-month'>Nov</span> <span class='date-day'>5</span><span class='date-suffix'>th</span>, <span class='date-year'>2014</span></span> <span class='time'>10:22 pm</span></time>
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><p>အခုကျွန်တော်တို့ နောက်ထပ်အနေနဲ့ ပေါင်း နှုတ် မြှောက် စား တွေလုပ်ကြည့်ရအောင်ပါ။ irb ထဲမှာ</p>
+
+<div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>"irb" </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>>>35 + 289
+</span><span class='line'>=>324</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+
+<p>လို့ရိုက်လိုက်ရင် 324 ဆိုတာကို output ထုတ်ပေးပါလိမ့်မယ်။ဒီနေရာမှာလည်း Number တွေကို Intege data type လို့သတ်မှတ်ပါတယ်။နောက်ထပ်</p>
+
+<div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>irb </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>>>789 – 567
+</span><span class='line'>=>222</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+
+<p>ဆိုရင်တော့ 222 ကို output ထုတ်ပေးပါလိမ့်မယ်။</p>
+
+<div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>irb </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>>>960 * 325
+</span><span class='line'>=>312000</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+
+<p>ဒါဆိုရင်တော့ 312000 လို့ output ထွက်လာပါလိမ့်မယ်။သိပ်ထူးထူးခြားခြားမရှိလို့ နားလည်မယ်ထင်ပါတယ်။</p>
+
+<div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>irb </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>>>20/3
+</span><span class='line'>=>6</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+
+<p>ဒီနေရာမှာ ထူးခြားတာက 20 ကို 3 နဲ့စားတဲ့နေရာမှာ 6 လို့ပဲအဖြေထွက်လာပါတယ်။ဘာကြောင့်လဲဆိုတော့ ကျွန်တော်တို့က integer  type ကိုသုံးထားတာကြောင့် integer  type ကို output ပြန်ထုတ်ပေးတာဖြစ်ပါတယ်။
+တစ်ကယ်လို့ကျွန်တော်တို့က Decimal တန်ဖိုးနဲ့လိုချင်ရင်တော့</p>
+
+<div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>irb </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>>>20.0/3
+</span><span class='line'>=> 6.666666666666667</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+
+<p>ဒါဆိုရင်တော့ ကျွန်တော်တို့လိုချင်တဲ့ Decimal တန်ဖိုးနဲ့ output ထွက်လာပါပြီ။အဲဒီ Decimal တန်ဖိုးတွေကို Float data type လို့ခေါ်ပါတယ်။နောက်ထပ် Data type တစ်ခုဖြစ်တဲ့ Boolean ဆိုတာကတော့ true/false တန်ဖိုးတွေကိုသတ်မှတ်ပါတယ်။</p>
+
+<div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>irb </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>>> 3>4
+</span><span class='line'>=>false</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+
+<p>ဒီနေရာမှာ 3 က 4 ထက်ငယ်တဲ့အတွက် Boolean type ဖြစ်တဲ့ false ကို output ထုတ်ပေးတာပါ။</p>
+
+<div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>irb </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>>>3&lt;4
+</span><span class='line'>=>true</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+
+<p>ဒီမှာတော့ 4 က 3 ထက်ကြီးတဲ့အတွက် true ကို output ထုတ်ပေးပါတယ်။
+ ဒါဆိုရင်တော့စိတ်ကြိုက်တစ်ခြား ပေါင်း နှုတ် မြှောက် စား တာတွေလုပ်ကြည့်လိုက်ပါ။နောက်ထပ်အနေနဲ့ Modulus ဆိုတဲ့ <code> %  </code>ကိုတော့ အကြွင်းရှာတဲ့နေရာမှာသုံးပါတယ်။</p>
+
+<div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>irb </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>>>75%2
+</span><span class='line'>=>1</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+
+<p>75 ကို 2 နဲ့စားရင် အကြွင်း 1 ရတာကြောင့် 1 ကို output ထုတ်ပေးပါလိမ့်မယ်။နောက်တစ်ခုအနေနဲ့  Number တစ်ခုရဲ့ power ကိုရှာချင်တဲ့အခါမှာ <code> ** </code> ဆိုတာကိုသုံးပါတယ်။</p>
+
+<div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>irb </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>>>2**3
+</span><span class='line'>=>8</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+
+<p>2 power 3 အဖြေကိုရှာလိုက်တဲ့အခါမှာ 8 ကို output ထုတ်ပေးပါတယ်။ကျွန်တော်တို့အပေါ်မှာ သုံးခဲ့တဲ့<code>  +, -, *, /, %, **  </code>ဆိုတဲ့ Operator တွေကို Arithmetic operator တစ်နည်းအားဖြင့် Math operator တွေလို့ခေါ်ပါတယ်။ဒီနေရာမှာ variable ကိုသုံးပြီးတစ်ခြား assignment operator တွေကိုရှင်းပြချင်တာကြောင့် variable ဆိုတာကို တန်ဖိုးတွေကိုယာယီသိုလှောင်ထားတဲ့ ကိန်းရှင် တစ်ခုလို့လွယ်လွယ်မှတ်ထားစေချင်ပါတယ်။အခုနောက်ထပ် addition assignment ဆိုတဲ့ += အကြောင်းကိုပြောပါမယ်။</p>
+
+<div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>irb </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>>>i = 5
+</span><span class='line'>=>5
+</span><span class='line'>>>i += 20
+</span><span class='line'>=>20
+</span><span class='line'>>>i
+</span><span class='line'>=>25</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+
+<p>ပထမဆုံး i ဆိုတဲ့ variable တန်ဖိုးကို 5 လို့သတ်မှတ်လိုက်ပါတယ်။အဲဒီ i ဆိုတဲ့ variable ထဲကိုပဲ <code>i += 20</code> ဆိုပြီး 20 ထပ်ပေါင်းထည့်လိုက်ပါတယ်။အဲဒါကြောင့်နောက်ဆုံးမှာ variable ဖြစ်တဲ့ i ကိုခေါ်လိုက်တာနဲ့ သူ့ရဲ့ တန်ဖိုးက   25 ဖြစ်သွားပါတယ်။အရမ်းလည်းမခက်ခဲတာကြောင့် တစ်ခြား <code> -=  </code> တို့  <code> *=  </code> နဲ့  <code> /= </code> အကြောင်းတို့ကိုဆက်မရှင်းပြတော့ပါဘူး။ကိုယ်တိုင်သာစမ်းကြည့်ကြလိုက်ကြပါ။</p>
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="fn">Wanayhtun</span></span>
+
+      
+
+
+
+
+<time class='entry-date' datetime='2014-11-05T22:22:27+06:30'><span class='date'><span class='date-month'>Nov</span> <span class='date-day'>5</span><span class='date-suffix'>th</span>, <span class='date-year'>2014</span></span> <span class='time'>10:22 pm</span></time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/blog/blog/categories/ruby/'>ruby</a>
+  
+</span>
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://wanay.github.io/blog/hello-ruby-2/" data-via="https://twitter.com/wanayhtun" data-counturl="http://wanay.github.io/blog/hello-ruby-2/" >Tweet</a>
+  
+  
+  
+    <div class="fb-like" data-send="true" data-width="450" data-show-faces="false"></div>
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/vim-and-plugins/" title="Previous Post: Vim and Plugins">&laquo; Vim and Plugins</a>
+      
+      
+        <a class="basic-alignment right" href="/blog/javascript-variable/" title="Next Post: Javascript Variable">Javascript Variable &raquo;</a>
+      
+    </p>
+  </footer>
+</article>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/javascript-variable/">Javascript Variable</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/hello-ruby-2/">Hello Ruby 2</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/vim-and-plugins/">Vim and Plugins</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/hello-ruby/">Hello Ruby</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/angularjs-fundamental-2/">Angularjs Fundamental 2</a>
+      </li>
+    
+  </ul>
+</section>
+
+
+
+
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2014 - Wanayhtun -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) {return;}
+  js = d.createElement(s); js.id = id; js.async = true;
+  js.src = "//connect.facebook.net/en_US/all.js#appId=212934732101925&xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = '//platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>

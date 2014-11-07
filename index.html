@@ -9,7 +9,7 @@
   <meta name="author" content="Wanayhtun">
 
   
-  <meta name="description" content="Vim မှာ Plugin တွေ install လုပ်ရတာနည်းနည်းတော့ အလုပ်ရှုပ်ခက်ခဲပါတယ်။ခက်ခဲတယ်ဆိုလို့ သိပ်စိတ်မပျက်သွားပါနဲ့အုံး လွယ်လွယ်ကူကူ install လုပ်နိုင်ဖို့နဲ့ &hellip;">
+  <meta name="description" content="ဒီနေ့တော့ javascript variable တွေအကြောင်းကိုလေ့လာကြပါမယ်။variable ဆိုတာက တန်ဖိုးတွေကို ယာယီသိုလှောင်ပေးထားတဲ့ ကိန်းရှင်တွေလို့ခေါ်ပါတယ်။javascript &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -65,6 +65,305 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/javascript-variable/">Javascript Variable</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2014-11-06T04:05:45+06:30'><span class='date'><span class='date-month'>Nov</span> <span class='date-day'>6</span><span class='date-suffix'>th</span>, <span class='date-year'>2014</span></span> <span class='time'>4:05 am</span></time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>ဒီနေ့တော့ javascript variable တွေအကြောင်းကိုလေ့လာကြပါမယ်။variable ဆိုတာက တန်ဖိုးတွေကို ယာယီသိုလှောင်ပေးထားတဲ့ ကိန်းရှင်တွေလို့ခေါ်ပါတယ်။javascript မှာထူးခြားချက် variable တွေရဲ့ data type ကိုကြိုတင်ကြေငြာပေးစရာမလိုပါဘူး။variable တစ်ခုထဲကို String တန်ဖိုးတွေ ထည့်ထားရင် သူ့ရဲ့ data type ကလည်း String data type ဖြစ်နေမှာပါ။တစ်ကယ်လို့ integer တန်ဖိုးတွေထည့်ထားခဲ့ရင်လည်း သူ့ရဲ့ data type က integer ဖြစ်နေမှာပါပဲ။ javascript မှာ variable တွေကို var ဆိုတဲ့ keyword နဲ့သတ်မှတ်ပါတယ်။ဥပမာအနေနဲ့ <code>var i = “Hello javascript”; </code>လို့ဆိုလိုက်တာနဲ့ i ဆိုတဲ့ variable ထဲကို Hello javascript ဆိုတဲ့ string တစ်ခုသိုလှောင်ပြီးသားဖြစ်သွားမှာပါ။တစ်ကယ်လို့ <code>var x = 21;</code> ဆိုတာနဲ့ x ဆိုတဲ့ variable ထဲကို 21 ဆိုတဲ့ integer တန်ဖိုးတစ်ခုသိုလှောင်လိုက်တာပါ။ဒါဆိုလက်တွေ့ code လေးတွေစမ်းရေးကြည့်ပါမယ်။</p>
+
+<figure class='code'><figcaption><span>index.html </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+</pre></td><td class='code'><pre><code class='html'><span class='line'><span class="cp">&lt;!doctype html&gt;</span>
+</span><span class='line'><span class="nt">&lt;html</span> <span class="na">lang=</span><span class="s">&quot;en&quot;</span><span class="nt">&gt;</span>
+</span><span class='line'><span class="nt">&lt;head&gt;</span>
+</span><span class='line'>     <span class="nt">&lt;meta</span> <span class="na">charset=</span><span class="s">&quot;UTF-8&quot;</span><span class="nt">&gt;</span>
+</span><span class='line'>   <span class="nt">&lt;title&gt;</span>Variable<span class="nt">&lt;/title&gt;</span>
+</span><span class='line'><span class="nt">&lt;/head&gt;</span>
+</span><span class='line'><span class="nt">&lt;body&gt;</span>
+</span><span class='line'>     <span class="nt">&lt;script </span><span class="na">type=</span><span class="s">&quot;text/javascript&quot;</span><span class="nt">&gt;</span>
+</span><span class='line'>  <span class="err"> </span> <span class="kd">var</span> <span class="nx">x</span> <span class="o">=</span> <span class="mi">20</span><span class="p">;</span>
+</span><span class='line'>      <span class="kd">var</span> <span class="nx">y</span><span class="o">=</span> <span class="mi">28</span><span class="p">;</span>
+</span><span class='line'>      <span class="kd">var</span> <span class="nx">z</span> <span class="o">=</span> <span class="nx">x</span> <span class="o">+</span> <span class="nx">y</span><span class="p">;</span>
+</span><span class='line'>      <span class="nb">document</span><span class="p">.</span><span class="nx">write</span><span class="p">(</span><span class="nx">z</span><span class="p">);</span>
+</span><span class='line'><span class="err"> </span>   <span class="nt">&lt;/script&gt;</span>
+</span><span class='line'><span class="nt">&lt;/body&gt;</span>
+</span><span class='line'><span class="nt">&lt;/html&gt;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>ပထမဆုံး variable x ရဲ့တန်ဖိုးကို 20 လို့သတ်မှတ်ပေးထားပါတယ်။နောက်တစ်ခါ variable y ရဲ့တန်ဖိုးကိုတော့  28 လို့ပေးထားပါတယ်။နောက်ဆုံးမှာတော့ variable x နဲ့ variable y တို့ပေါင်းလို့ရတဲ့အဖြေကို variable z ထဲမှာသိုလှောင်လိုက်ပါတယ်။နောက်တော့ <code>document.write(z);</code> ဆိုပြီးတော့ variable z ထဲမှာသိုလှောင်ထားတဲ့တန်ဖိုးကို
+<code>document.write</code> နဲ့ output ထုတ်ပြလိုက်တာပါပဲ။အရမ်းလွယ်ပါတယ်။တစ်ခြား number တွေလည်းပြောင်းပြီးစိတ်ကြိုက် ပေါင်း နှုတ် မြောက် စား တွေလုပ်ကြည့်ကြပါ။ဒီနေရာမှာ ကျွန်တော်က x နဲ့ y ပေါင်းလို့ရလာမယ့်တန်ဖိုးကို variable z ထဲမှာကြိုတင်သိုလှောင်ထားလိုက်တာပါ။အဲဒါကြောင့် x နဲ့ y ပေါင်းလို့ရလာမယ့်တန်ဖိုးကို လိုချင်တိုင်း z ကိုခေါ်လိုက်တာနဲ့ လွယ်လွယ်ကူကူရလာမှာပါ။အဲလိုသာမရေးထားခဲ့ရင် x နဲ့ y ပေါင်းချင်တိုင်း x + y လိုက်ရေးနေရရင်အဆင်ပြေမှာမဟုတ်ပါဘူး။နမူနာအနေနဲ့ ဒီလိုဖြစ်နေမှာပါ။</p>
+
+<figure class='code'><figcaption><span>index.html </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+</pre></td><td class='code'><pre><code class='html'><span class='line'><span class="cp">&lt;!doctype html&gt;</span>
+</span><span class='line'><span class="nt">&lt;html</span> <span class="na">lang=</span><span class="s">&quot;en&quot;</span><span class="nt">&gt;</span>
+</span><span class='line'><span class="nt">&lt;head&gt;</span>
+</span><span class='line'>   <span class="nt">&lt;meta</span> <span class="na">charset=</span><span class="s">&quot;UTF-8&quot;</span><span class="nt">&gt;</span>
+</span><span class='line'>   <span class="nt">&lt;title&gt;</span>Variable<span class="nt">&lt;/title&gt;</span>
+</span><span class='line'><span class="nt">&lt;/head&gt;</span>
+</span><span class='line'><span class="nt">&lt;body&gt;</span>
+</span><span class='line'>   <span class="nt">&lt;script </span><span class="na">type=</span><span class="s">&quot;text/javascript&quot;</span><span class="nt">&gt;</span>
+</span><span class='line'>      <span class="err"> </span><span class="kd">var</span> <span class="nx">x</span> <span class="o">=</span> <span class="mi">20</span><span class="p">;</span>
+</span><span class='line'>       <span class="kd">var</span> <span class="nx">y</span><span class="o">=</span> <span class="mi">28</span><span class="p">;</span>
+</span><span class='line'>       <span class="nb">document</span><span class="p">.</span><span class="nx">write</span><span class="p">(</span><span class="nx">x</span><span class="o">+</span><span class="nx">y</span><span class="p">);</span>
+</span><span class='line'>  <span class="err"> </span><span class="nt">&lt;/script&gt;</span>
+</span><span class='line'><span class="nt">&lt;/body&gt;</span>
+</span><span class='line'><span class="nt">&lt;/html&gt;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p> variable တွေကို integer တွေပဲပေါင်း လို့ရတာမဟုတ်ပါဘူး။String type တွေကိုလည်း ပေါင်း လို့ရပါတယ်။ဥပမာအနေနဲ့</p>
+
+<figure class='code'><figcaption><span>index.html </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+</pre></td><td class='code'><pre><code class='html'><span class='line'><span class="cp">&lt;!doctype html&gt;</span>
+</span><span class='line'><span class="nt">&lt;html</span> <span class="na">lang=</span><span class="s">&quot;en&quot;</span><span class="nt">&gt;</span>
+</span><span class='line'><span class="nt">&lt;head&gt;</span>
+</span><span class='line'>   <span class="nt">&lt;meta</span> <span class="na">charset=</span><span class="s">&quot;UTF-8&quot;</span><span class="nt">&gt;</span>
+</span><span class='line'>   <span class="nt">&lt;title&gt;</span>Variable<span class="nt">&lt;/title&gt;</span>
+</span><span class='line'><span class="nt">&lt;/head&gt;</span>
+</span><span class='line'><span class="nt">&lt;body&gt;</span>
+</span><span class='line'>   <span class="nt">&lt;script </span><span class="na">type=</span><span class="s">&quot;text/javascript&quot;</span><span class="nt">&gt;</span>
+</span><span class='line'>      <span class="err"> </span><span class="kd">var</span> <span class="nx">x</span> <span class="o">=</span> <span class="err">“မင်္ဂလာပါ</span> <span class="err">”</span><span class="p">;</span>
+</span><span class='line'>       <span class="kd">var</span> <span class="nx">y</span><span class="o">=</span> <span class="err">“</span><span class="nx">javascript</span><span class="err">”</span><span class="p">;</span>
+</span><span class='line'>       <span class="kd">var</span> <span class="nx">z</span> <span class="o">=</span> <span class="nx">x</span> <span class="o">+</span> <span class="nx">y</span><span class="p">;</span>
+</span><span class='line'>       <span class="nb">document</span><span class="p">.</span><span class="nx">write</span><span class="p">(</span><span class="nx">z</span><span class="p">);</span>
+</span><span class='line'>  <span class="err"> </span><span class="nt">&lt;/script&gt;</span>
+</span><span class='line'><span class="nt">&lt;/body&gt;</span>
+</span><span class='line'><span class="nt">&lt;/html&gt;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>ဒါဆိုရင် မင်္ဂလာပါ javascript ဆိုတာကို output ထုတ်ပြပေးမှာဖြစ်ပါမယ်။မင်္ဂလာပါ နဲ့ javascript ကြားမှာ space လေးခြားချင်တာကြောင့် မင်္ဂလာပါ ဆိုတာရဲ့အနောက်မှာ space လေးခြားထားခဲ့တာသတိထား မိမယ်ထင်ပါတယ်။ဒါဆိုရင် int အချင်းချင်း string  အချင်းချင်းပဲပေါင်းလို့ရတာလားဆိုတော့ မဟုတ်ပါဘူး။ int နဲ့string ကိုလည်းပေါင်းလို့ရပါတယ်။</p>
+
+<figure class='code'><figcaption><span>index.html </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+</pre></td><td class='code'><pre><code class='html'><span class='line'><span class="cp">&lt;!doctype html&gt;</span>
+</span><span class='line'><span class="nt">&lt;html</span> <span class="na">lang=</span><span class="s">&quot;en&quot;</span><span class="nt">&gt;</span>
+</span><span class='line'><span class="nt">&lt;head&gt;</span>
+</span><span class='line'>   <span class="nt">&lt;meta</span> <span class="na">charset=</span><span class="s">&quot;UTF-8&quot;</span><span class="nt">&gt;</span>
+</span><span class='line'>   <span class="nt">&lt;title&gt;</span>Variable<span class="nt">&lt;/title&gt;</span>
+</span><span class='line'><span class="nt">&lt;/head&gt;</span>
+</span><span class='line'><span class="nt">&lt;body&gt;</span>
+</span><span class='line'>   <span class="nt">&lt;script </span><span class="na">type=</span><span class="s">&quot;text/javascript&quot;</span><span class="nt">&gt;</span>
+</span><span class='line'>      <span class="err"> </span><span class="kd">var</span> <span class="nx">name</span> <span class="o">=</span> <span class="err">“</span><span class="nx">Wanay</span><span class="err">”</span><span class="p">;</span>
+</span><span class='line'>       <span class="kd">var</span> <span class="nx">age</span> <span class="o">=</span> <span class="mi">16</span><span class="p">;</span>
+</span><span class='line'>       <span class="nb">document</span><span class="p">.</span><span class="nx">write</span><span class="p">(</span><span class="s2">&quot;Hi, I am &quot;</span> <span class="o">+</span> <span class="nx">name</span> <span class="o">+</span> <span class="s2">&quot; and &quot;</span> <span class="o">+</span> <span class="nx">age</span> <span class="o">+</span> <span class="s2">&quot; years old.&quot;</span><span class="p">);</span>
+</span><span class='line'>  <span class="err"> </span><span class="nt">&lt;/script&gt;</span>
+</span><span class='line'><span class="nt">&lt;/body&gt;</span>
+</span><span class='line'><span class="nt">&lt;/html&gt;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>နည်းနည်းလောက်ပြန်ရှင်းပြရရင် name ဆိုတဲ့ variable ထဲမှာ Wanay ဆိုတဲ့ string  တစ်ခုကိုသိုလှောင်ထားလိုက်ပါတယ်။နောက်တစ်ခါ age ဆိုတဲ့ variable ထဲမှာတော့ 16 ဆိုတဲ့ int တစ်ခုကိုသိုလှောင်လိုက်ပါတယ်။အောက်ဆုံးမှာတော့ output ထုတ်ပြဖို့အတွက် document.write ထဲမှာ “Hi, I am “ ဆိုတဲ့စာသားနဲ့ name ဆိုတဲ့ variable ကို + ပေါင်းပါတယ်။နောက်တစ်ခါ “ and” ဆိုတဲ့စာသားနဲ့ ပေါင်းပါတယ်။ထပ်ပြီးတော့ age ဆိုတဲ့ variable ကို ထပ်ပေါင်းပါတယ်။နောက်ဆုံးမှာတော့ &ldquo; years old.&rdquo; ဆိုတာနဲ့ပေါင်းလိုက်တဲ့အခါမှာတော့  output မှာ Hi, I am Wanay and 16 years old. ဆိုတာကိုတွေ့ရမှာပါ။ဒီနေ့တော့ variable အကြောင်း ဒီလောက်နဲ့နားပါအုံးမယ်။</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/hello-ruby-2/">Hello Ruby 2</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2014-11-05T22:22:27+06:30'><span class='date'><span class='date-month'>Nov</span> <span class='date-day'>5</span><span class='date-suffix'>th</span>, <span class='date-year'>2014</span></span> <span class='time'>10:22 pm</span></time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>အခုကျွန်တော်တို့ နောက်ထပ်အနေနဲ့ ပေါင်း နှုတ် မြှောက် စား တွေလုပ်ကြည့်ရအောင်ပါ။ irb ထဲမှာ</p>
+
+<figure class='code'><figcaption><span>&#8220;irb&#8221; </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>>>35 + 289
+</span><span class='line'>=>324</span></code></pre></td></tr></table></div></figure>
+
+
+<p>လို့ရိုက်လိုက်ရင် 324 ဆိုတာကို output ထုတ်ပေးပါလိမ့်မယ်။ဒီနေရာမှာလည်း Number တွေကို Intege data type လို့သတ်မှတ်ပါတယ်။နောက်ထပ်</p>
+
+<figure class='code'><figcaption><span>irb </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>>>789 – 567
+</span><span class='line'>=>222</span></code></pre></td></tr></table></div></figure>
+
+
+<p>ဆိုရင်တော့ 222 ကို output ထုတ်ပေးပါလိမ့်မယ်။</p>
+
+<figure class='code'><figcaption><span>irb </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>>>960 * 325
+</span><span class='line'>=>312000</span></code></pre></td></tr></table></div></figure>
+
+
+<p>ဒါဆိုရင်တော့ 312000 လို့ output ထွက်လာပါလိမ့်မယ်။သိပ်ထူးထူးခြားခြားမရှိလို့ နားလည်မယ်ထင်ပါတယ်။</p>
+
+<figure class='code'><figcaption><span>irb </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>>>20/3
+</span><span class='line'>=>6</span></code></pre></td></tr></table></div></figure>
+
+
+<p>ဒီနေရာမှာ ထူးခြားတာက 20 ကို 3 နဲ့စားတဲ့နေရာမှာ 6 လို့ပဲအဖြေထွက်လာပါတယ်။ဘာကြောင့်လဲဆိုတော့ ကျွန်တော်တို့က integer  type ကိုသုံးထားတာကြောင့် integer  type ကို output ပြန်ထုတ်ပေးတာဖြစ်ပါတယ်။
+တစ်ကယ်လို့ကျွန်တော်တို့က Decimal တန်ဖိုးနဲ့လိုချင်ရင်တော့</p>
+
+<figure class='code'><figcaption><span>irb </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>>>20.0/3
+</span><span class='line'>=> 6.666666666666667</span></code></pre></td></tr></table></div></figure>
+
+
+<p>ဒါဆိုရင်တော့ ကျွန်တော်တို့လိုချင်တဲ့ Decimal တန်ဖိုးနဲ့ output ထွက်လာပါပြီ။အဲဒီ Decimal တန်ဖိုးတွေကို Float data type လို့ခေါ်ပါတယ်။နောက်ထပ် Data type တစ်ခုဖြစ်တဲ့ Boolean ဆိုတာကတော့ true/false တန်ဖိုးတွေကိုသတ်မှတ်ပါတယ်။</p>
+
+<figure class='code'><figcaption><span>irb </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>>> 3>4
+</span><span class='line'>=>false</span></code></pre></td></tr></table></div></figure>
+
+
+<p>ဒီနေရာမှာ 3 က 4 ထက်ငယ်တဲ့အတွက် Boolean type ဖြစ်တဲ့ false ကို output ထုတ်ပေးတာပါ။</p>
+
+<figure class='code'><figcaption><span>irb </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>>>3&lt;4
+</span><span class='line'>=>true</span></code></pre></td></tr></table></div></figure>
+
+
+<p>ဒီမှာတော့ 4 က 3 ထက်ကြီးတဲ့အတွက် true ကို output ထုတ်ပေးပါတယ်။
+ ဒါဆိုရင်တော့စိတ်ကြိုက်တစ်ခြား ပေါင်း နှုတ် မြှောက် စား တာတွေလုပ်ကြည့်လိုက်ပါ။နောက်ထပ်အနေနဲ့ Modulus ဆိုတဲ့ <code> %  </code>ကိုတော့ အကြွင်းရှာတဲ့နေရာမှာသုံးပါတယ်။</p>
+
+<figure class='code'><figcaption><span>irb </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>>>75%2
+</span><span class='line'>=>1</span></code></pre></td></tr></table></div></figure>
+
+
+<p>75 ကို 2 နဲ့စားရင် အကြွင်း 1 ရတာကြောင့် 1 ကို output ထုတ်ပေးပါလိမ့်မယ်။နောက်တစ်ခုအနေနဲ့  Number တစ်ခုရဲ့ power ကိုရှာချင်တဲ့အခါမှာ <code> ** </code> ဆိုတာကိုသုံးပါတယ်။</p>
+
+<figure class='code'><figcaption><span>irb </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>>>2**3
+</span><span class='line'>=>8</span></code></pre></td></tr></table></div></figure>
+
+
+<p>2 power 3 အဖြေကိုရှာလိုက်တဲ့အခါမှာ 8 ကို output ထုတ်ပေးပါတယ်။ကျွန်တော်တို့အပေါ်မှာ သုံးခဲ့တဲ့<code>  +, -, *, /, %, **  </code>ဆိုတဲ့ Operator တွေကို Arithmetic operator တစ်နည်းအားဖြင့် Math operator တွေလို့ခေါ်ပါတယ်။ဒီနေရာမှာ variable ကိုသုံးပြီးတစ်ခြား assignment operator တွေကိုရှင်းပြချင်တာကြောင့် variable ဆိုတာကို တန်ဖိုးတွေကိုယာယီသိုလှောင်ထားတဲ့ ကိန်းရှင် တစ်ခုလို့လွယ်လွယ်မှတ်ထားစေချင်ပါတယ်။အခုနောက်ထပ် addition assignment ဆိုတဲ့ += အကြောင်းကိုပြောပါမယ်။</p>
+
+<figure class='code'><figcaption><span>irb </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>>>i = 5
+</span><span class='line'>=>5
+</span><span class='line'>>>i += 20
+</span><span class='line'>=>20
+</span><span class='line'>>>i
+</span><span class='line'>=>25</span></code></pre></td></tr></table></div></figure>
+
+
+<p>ပထမဆုံး i ဆိုတဲ့ variable တန်ဖိုးကို 5 လို့သတ်မှတ်လိုက်ပါတယ်။အဲဒီ i ဆိုတဲ့ variable ထဲကိုပဲ <code>i += 20</code> ဆိုပြီး 20 ထပ်ပေါင်းထည့်လိုက်ပါတယ်။အဲဒါကြောင့်နောက်ဆုံးမှာ variable ဖြစ်တဲ့ i ကိုခေါ်လိုက်တာနဲ့ သူ့ရဲ့ တန်ဖိုးက   25 ဖြစ်သွားပါတယ်။အရမ်းလည်းမခက်ခဲတာကြောင့် တစ်ခြား <code> -=  </code> တို့  <code> *=  </code> နဲ့  <code> /= </code> အကြောင်းတို့ကိုဆက်မရှင်းပြတော့ပါဘူး။ကိုယ်တိုင်သာစမ်းကြည့်ကြလိုက်ကြပါ။</p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -167,15 +466,14 @@
   </header>
 
 
-  <div class="entry-content"><p>Ruby ကိုမလေ့လာခင်တစ်ခြားလိုအပ်ချက်တွေ အများကြီးမရှိပါဘူး။HTML, CSS နဲ့ Javascript ကိုသိထားရင်စပြီးလေ့လာလို့ရပါပြီ။Ruby က Object Oriented Scripting language တစ်ခုဖြစ်ပါတယ်။Ruby ကို 2003 ခုနှစ်လောက်မှာ ဂျပန်လူမျိုး Yukihiro Matsumoto ကစတင်ပြီးဖန်တီးခဲ့ပါတယ်။သူ့ကိုတော့ Online မှာ Matz လို့လူသိများပါတယ်။ဒါပေမယ့်လည်း စစခြင်းမှာ Ruby က ဒီလောက်နာမည်မကြီးခဲ့ပါဘူး။PHP နဲ့ ASP နဲ့ကသာ Web ကိုအဓိကကြီးစိုးနေခဲ့တာပါ။2004 ခုနှစ်လောက်မှာတော့ David Heinemeir Hansson က အခုလူသိများကြတဲ့ Rails ဆိုတဲ့ Framework ကိုစတင်ဖန်တီးခဲ့ပါတယ်။Rails ဆိုတာက Ruby programming language ကိုအသုံးချပြီးဖန်တီးထားတဲ့ Ruby Framwork တစ်ခုပါ။Rails ရဲ့ MVC architecture ဟာအရမ်းကိုအောင်မြင်ခဲ့ပြီးနောက်ပိုင်းမှာ PHP Framework တစ်ချို့နဲ့ ASP ကပါပြန်ပြီးအတုယူခဲ့ကြရပါတယ်။အခုဆို PHP မှာနာမည်ကြီးနေတဲ့ Framework တစ်ခုဖြစ်တဲ့ Laravel ကလည်း Rails ကိုတုပဖန်တီးထားပါသေးတယ်။Ruby ရဲ့အားသာချက်က ရေးရတာ ပေါ့ပါးလွယ်ကူတာကြောင့် web application တစ်ခုကိုမြန်မြန်ဆန်ဆန်ဖန်တီးနိုင်ပါတယ်။ဒါကြောင့်လည်း Startup တော်တော်များများက Ruby နဲ့စကြတာများပါတယ်။Ruby မှာ Rails အပြင်နောက်ထပ်နာမည်ကြီး Framework ​​တွေရှိပါသေးတယ်။တစ်ချို့က Ruby လို့ဆိုလိုက်တာနဲ့ Rails နဲ့တွဲပြီး Ruby on Rails(ROR)လို့သာအသိများကြပါတယ်။Rails ကတစ်ကယ့်ကိုပြည့်စုံတဲ့ Framework ဆိုပေမယ့် project သေးသေးလေးတွေအတွက်တော့သိပ်အဆင်မပြေပါဘူး။ အဲဒါကြောင့် Sinatra ဆိုတဲ့ Framework ကိုလည်းလူသုံးများကြပါတယ်။အခုနောက်ပိုင်း နာမည်ကြီးနေတဲ့ Node js Framewok တစ်ခုဖြစ်တဲ့ Express js ဆိုရင်လည်း Sinatra ကိုတုပထားပါတယ်။Ruby မှာ Sinatra လိုမျိုးပေါ့ပါးတဲ့ Framework တစ်ခုဖြစ်တဲ့ Roda ဆိုတာကလည်း အခုနောက်ပိုင်း နာမည်ရလာပါတယ်။Ruby Framework တွေကိုမလေ့လာခင် Ruby ကိုအရင်လေ့လာထားမှသာ Rails နဲ့ တစ်ခြား Framework တွေလေ့လာရာမှာလွယ်ကူမှာဖြစ်ပါတယ်။။ဒီတော့ Ruby အရင်ဆုံးလေ့လာဖို့အတွက်စက်မှာ install လုပ်ပါမယ်။ဒီနေရာမှာ windows မှာ install လုပ်တာကိုထည့်မပြောတော့ပါဘူး။တစ်ကယ်တော့ Ruby ကိုစလေ့လာတော့မယ်ဆိုရင် Mac မှာဖြစ်ဖြစ် Linux Distro တစ်ခုခုမှာလေ့လာတာအကောင်းဆုံးပါပဲ။အခုအရင်ဆုံး RVM လို့ခေါ်တဲ့ Ruby Version Manager ကို အရင်ဆုံး install လုပ်ပါမယ်။အဲဒီတော့ Terminal မှာ အခုလိုရိုက်လိုက်ပါ။
- <figure class='code'><figcaption><span>install rvm and ruby </span></figcaption></p>
+  <div class="entry-content"><p>Ruby ကိုမလေ့လာခင်တစ်ခြားလိုအပ်ချက်တွေ အများကြီးမရှိပါဘူး။HTML, CSS နဲ့ Javascript ကိုသိထားရင်စပြီးလေ့လာလို့ရပါပြီ။Ruby က Object Oriented Scripting language တစ်ခုဖြစ်ပါတယ်။Ruby ကို 2003 ခုနှစ်လောက်မှာ ဂျပန်လူမျိုး Yukihiro Matsumoto ကစတင်ပြီးဖန်တီးခဲ့ပါတယ်။သူ့ကိုတော့ Online မှာ Matz လို့လူသိများပါတယ်။ဒါပေမယ့်လည်း စစခြင်းမှာ Ruby က ဒီလောက်နာမည်မကြီးခဲ့ပါဘူး။PHP နဲ့ ASP နဲ့ကသာ Web ကိုအဓိကကြီးစိုးနေခဲ့တာပါ။2004 ခုနှစ်လောက်မှာတော့ David Heinemeir Hansson က အခုလူသိများကြတဲ့ Rails ဆိုတဲ့ Framework ကိုစတင်ဖန်တီးခဲ့ပါတယ်။Rails ဆိုတာက Ruby programming language ကိုအသုံးချပြီးဖန်တီးထားတဲ့ Ruby Framwork တစ်ခုပါ။Rails ရဲ့ MVC architecture ဟာအရမ်းကိုအောင်မြင်ခဲ့ပြီးနောက်ပိုင်းမှာ PHP Framework တစ်ချို့နဲ့ ASP ကပါပြန်ပြီးအတုယူခဲ့ကြရပါတယ်။အခုဆို PHP မှာနာမည်ကြီးနေတဲ့ Framework တစ်ခုဖြစ်တဲ့ Laravel ကလည်း Rails ကိုတုပဖန်တီးထားပါသေးတယ်။Ruby ရဲ့အားသာချက်က ရေးရတာ ပေါ့ပါးလွယ်ကူတာကြောင့် web application တစ်ခုကိုမြန်မြန်ဆန်ဆန်ဖန်တီးနိုင်ပါတယ်။ဒါကြောင့်လည်း Startup တော်တော်များများက Ruby နဲ့စကြတာများပါတယ်။Ruby မှာ Rails အပြင်နောက်ထပ်နာမည်ကြီး Framework ​​တွေရှိပါသေးတယ်။တစ်ချို့က Ruby လို့ဆိုလိုက်တာနဲ့ Rails နဲ့တွဲပြီး Ruby on Rails(ROR)လို့သာအသိများကြပါတယ်။Rails ကတစ်ကယ့်ကိုပြည့်စုံတဲ့ Framework ဆိုပေမယ့် project သေးသေးလေးတွေအတွက်တော့သိပ်အဆင်မပြေပါဘူး။ အဲဒါကြောင့် Sinatra ဆိုတဲ့ Framework ကိုလည်းလူသုံးများကြပါတယ်။အခုနောက်ပိုင်း နာမည်ကြီးနေတဲ့ Node js Framewok တစ်ခုဖြစ်တဲ့ Express js ဆိုရင်လည်း Sinatra ကိုတုပထားပါတယ်။Ruby မှာ Sinatra လိုမျိုးပေါ့ပါးတဲ့ Framework တစ်ခုဖြစ်တဲ့ Roda ဆိုတာကလည်း အခုနောက်ပိုင်း နာမည်ရလာပါတယ်။Ruby Framework တွေကိုမလေ့လာခင် Ruby ကိုအရင်လေ့လာထားမှသာ Rails နဲ့ တစ်ခြား Framework တွေလေ့လာရာမှာလွယ်ကူမှာဖြစ်ပါတယ်။။ဒီတော့ Ruby အရင်ဆုံးလေ့လာဖို့အတွက်စက်မှာ install လုပ်ပါမယ်။ဒီနေရာမှာ windows မှာ install လုပ်တာကိုထည့်မပြောတော့ပါဘူး။တစ်ကယ်တော့ Ruby ကိုစလေ့လာတော့မယ်ဆိုရင် Mac မှာဖြစ်ဖြစ် Linux Distro တစ်ခုခုမှာလေ့လာတာအကောင်းဆုံးပါပဲ။အခုအရင်ဆုံး RVM လို့ခေါ်တဲ့ Ruby Version Manager ကို အရင်ဆုံး install လုပ်ပါမယ်။အဲဒီတော့ Terminal မှာ အခုလိုရိုက်လိုက်ပါ။</p>
 
+<figure class='code'><figcaption><span>&#8220;install rvm and ruby&#8221; </span></figcaption>
 <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>curl –sSL https://get.rvm.io | bash –s stable --ruby</span></code></pre></td></tr></table></div>
+</pre></td><td class='code'><pre><code class=''><span class='line'>curl –sSL https://get.rvm.io | bash –s stable --ruby</span></code></pre></td></tr></table></div></figure>
 
 
-<p></figure>
-အခုဆိုရင်ကျွန်တော်တို့ စက်မှာ rvm နဲ့ ruby ကို install လုပ်ပြီးသွားပါပြီ။ဟမ် အဲလောက်တောင်လွယ်လား ဆိုရင်ဟုတ်ပါတယ်။အဲလောက်ကိုလွယ်ပါတယ်။
+<p>အခုဆိုရင်ကျွန်တော်တို့ စက်မှာ rvm နဲ့ ruby ကို install လုပ်ပြီးသွားပါပြီ။ဟမ် အဲလောက်တောင်လွယ်လား ဆိုရင်ဟုတ်ပါတယ်။အဲလောက်ကိုလွယ်ပါတယ်။
 <code> ruby –v </code>
 လို့ ရိုက်ကြည့်လိုက်ရင် ruby ရဲ့လက်ရှိ version ကိုဖော်ပြပေးပါလိမ့်မယ်။ဒီစာရေးနေတဲ့ အချိန်မှာတော့ ruby stable version ကတော့ 2.1.3 ဖြစ်ပါတယ်။တစ်ကယ်လို့ ကျွန်တော်တို့လက်ရှိ project ကို ruby 2.1.3 နဲ့အလုပ်လုပ် နေချိန်မှာ ruby version တစ်ခုအသစ်ထွက်လာလို့ စမ်းသပ်ချင်ရင်လည်း rvm ကိုသုံးထားတဲ့ အတွက် ruby version တွေကိုအဆင်ပြေပြေနဲ့သုံးနိုင်ပါလိမ့်မယ်။လောလောဆယ် <code> rvm list </code> လို့ရိုက်လိုက်ရင် စက်ထဲမှာသွင်းထားတဲ့ ruby stable version ကိုပြပေးပါလိမ့်မယ်။တစ်ကယ်လို့နောက်ထပ် ruby version တွေသွင်းချင်ရင်တော့ <code> rvm install (ruby version number) </code> ဆိုပြီးအသစ်တွေသွင်းနိုင်ပါတယ်။ဥပမာ ruby version number ဆိုတာကတော့ <code> rvm install 2.1.2 </code>  ဒါဆိုရင်တော့ ruby version 2.1.2 ကို install လုပ်ပေးပါလိမ့်မယ်။ အခုဆို <code> rvm list </code>လို့ရိုက်လိုက်တာနဲ့ <code> ruby 2.1.2 </code>နဲ့ <code> ruby 2.1.3 </code>ဆိုပြီးပြပေးပါလိမ့်မယ်။ ဥပမာအနေနဲ့ <code> rvm use 2.1.2  </code>ဒါဆိုကျွန်တော်တို့က ruby 2.1.2 ကိုသုံးမယ်လို့ပြောလိုက်တာပါ။<code> ruby –v  </code>ဆိုပြီးရိုက်လိုက်ရင် ruby version က 2.1.2 ဖြစ်နေပါလိမ့်မယ်။ဒါပေမယ့် အခုတော့ကျွန်တော်တို့ 2.1.3 ကိုပဲသုံးမှာဖြစ်တဲ့အတွက် <code> rvm use 2.1.3 </code>လို့ပဲရိုက်လိုက်ပါ။ဒါဆိုရင် <code> ruby –v </code> ဆိုတာနဲ့ ruby version က 2.1.3 ဖြစ်သွားပါပြီ။ဒီနေရာမှာ ကျွန်တော်တို့ rails ကိုအသုံးမပြုသေးပေမယ့်တစ်ခါတည်း install လုပ်ထားခဲ့ပါမယ်။</p>
 
@@ -195,6 +493,393 @@
 
 
 <p>လို့ရိုက်လိုက်တာနဲ့ Hello World! ဆိုတာကို output ထုတ်ပေးပါလိမ့်မယ်။ Ruby မှာ တစ်ခုခု output ထုတ်ပြချင်တဲ့အခါမှာ puts ကိုသုံးပါတယ်။” “ ကြားထဲကထည့်သမျှကို String data type လို့သတ်မှတ်ပါတယ်။တစ်ကယ်လို့ irb ကနေထွက်ချင်ရင်တော့ quit ပဲဖြစ်ဖြစ် exit ဖြစ်ဖြစ်ရိုက်ပြီး ထွက်လို့ရပါတယ်။</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/angularjs-fundamental-2/">Angularjs Fundamental 2</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2014-09-20T04:15:01+06:30'><span class='date'><span class='date-month'>Sep</span> <span class='date-day'>20</span><span class='date-suffix'>th</span>, <span class='date-year'>2014</span></span> <span class='time'>4:15 am</span></time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>အခုဒုတိယအပိုင်းအနေနဲ့ Data binding နဲ့ပတ်သက်တာလေးနည်းနည်းထပ်ပြောပါအုံးမယ်။အရင်အပိုင်းကရှိထားပြီးသား Code ထဲကို အခုနောက်ထပ် Age ဆိုတဲ့ input တစ်ခုထပ်ထည့်လိုက်ပါမယ်။</p>
+
+<figure class='code'><figcaption><span>index.html </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+</pre></td><td class='code'><pre><code class='html'><span class='line'><span class="cp">&lt;!DOCTYPE html&gt;</span>
+</span><span class='line'><span class="nt">&lt;html</span> <span class="na">ng-app</span><span class="nt">&gt;</span>
+</span><span class='line'><span class="nt">&lt;head&gt;</span>
+</span><span class='line'>  <span class="nt">&lt;meta</span> <span class="na">charset=</span><span class="s">&quot;UTF-8&quot;</span><span class="nt">&gt;</span>
+</span><span class='line'>  <span class="nt">&lt;title&gt;</span>Angular Fundamental<span class="nt">&lt;/title&gt;</span>
+</span><span class='line'>  <span class="nt">&lt;script </span><span class="na">type=</span><span class="s">&quot;text/javascript&quot;</span> <span class="na">src=</span><span class="s">&quot;js/angular.js&quot;</span><span class="nt">&gt;&lt;/script&gt;</span>
+</span><span class='line'><span class="nt">&lt;/head&gt;</span>
+</span><span class='line'><span class="nt">&lt;body&gt;</span>
+</span><span class='line'>  <span class="nt">&lt;div</span> <span class="na">ng-controller=</span><span class="s">&quot;Ctrl&quot;</span><span class="nt">&gt;</span>
+</span><span class='line'>      <span class="nt">&lt;label&gt;</span>Name: <span class="nt">&lt;label&gt;</span>
+</span><span class='line'>      <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">&quot;text&quot;</span> <span class="na">ng-model=</span><span class="s">&quot;name&quot;</span> <span class="na">placeholder=</span><span class="s">&quot;What&#39;s your name?&quot;</span> <span class="nt">/&gt;</span>
+</span><span class='line'>      <span class="nt">&lt;h1&gt;</span>Hello !<span class="nt">&lt;/h1&gt;</span>
+</span><span class='line'>      <span class="nt">&lt;label&gt;</span>Age: <span class="nt">&lt;label&gt;</span>
+</span><span class='line'>      <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">&quot;number&quot;</span> <span class="na">ng-model=</span><span class="s">&quot;age&quot;</span> <span class="na">placeholder=</span><span class="s">&quot;How old are you?&quot;</span> <span class="nt">/&gt;</span>
+</span><span class='line'>      <span class="nt">&lt;h2&gt;</span>You are  years old!<span class="nt">&lt;/h1&gt;</span>
+</span><span class='line'>  <span class="nt">&lt;/div&gt;</span>
+</span><span class='line'>  
+</span><span class='line'>  <span class="nt">&lt;script&gt;</span>
+</span><span class='line'>  <span class="kd">var</span> <span class="nx">Ctrl</span> <span class="o">=</span> <span class="kd">function</span><span class="p">(</span><span class="nx">$scope</span><span class="p">){</span>
+</span><span class='line'>      <span class="nx">$scope</span><span class="p">.</span><span class="nx">name</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span><span class="p">;</span>
+</span><span class='line'>      <span class="nx">$scope</span><span class="p">.</span><span class="nx">age</span>  <span class="o">=</span> <span class="s2">&quot;&quot;</span><span class="p">;</span>
+</span><span class='line'>  <span class="p">}</span>
+</span><span class='line'>  <span class="nt">&lt;/script&gt;</span>
+</span><span class='line'><span class="nt">&lt;/body&gt;</span>
+</span><span class='line'><span class="nt">&lt;/html&gt;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Browser မှာသွားစမ်းကြည့်တဲ့အခါမှာ age ရဲ့ input မှာထည့်သမျှကိုကျွန်တော်တို့ age ကို <code>* 2</code> ဆိုပြီးရေးထားတာကြောင့် အောက်က h2 tag ထဲမှာနှစ်ဆဖြစ်နေတာကိုတွေ့ရမှာပါ။ပြောချင်တာကတော့ Data bindingလုပ်တဲ့နေရာမှာ ဒီလိုမျိုးတွေလည်း လုပ်လို့ရတယ်ဆိုတာကိုသိစေချင်တာပါ။
+ ကျွန်တော်တို့နောက်ထပ်အသစ်တစ်ခုထပ်လေ့လာကြည့်ပါမယ်။</p>
+
+<figure class='code'><figcaption><span>index.html </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+</pre></td><td class='code'><pre><code class='html'><span class='line'><span class="cp">&lt;!DOCTYPE html&gt;</span>
+</span><span class='line'><span class="nt">&lt;html</span> <span class="na">ng-app</span><span class="nt">&gt;</span>
+</span><span class='line'><span class="nt">&lt;head&gt;</span>
+</span><span class='line'>  <span class="nt">&lt;meta</span> <span class="na">charset=</span><span class="s">&quot;UTF-8&quot;</span><span class="nt">&gt;</span>
+</span><span class='line'>  <span class="nt">&lt;title&gt;</span>Angular Fundamental<span class="nt">&lt;/title&gt;</span>
+</span><span class='line'>  <span class="nt">&lt;script </span><span class="na">type=</span><span class="s">&quot;text/javascript&quot;</span> <span class="na">src=</span><span class="s">&quot;js/angular.js&quot;</span><span class="nt">&gt;&lt;/script&gt;</span>
+</span><span class='line'><span class="nt">&lt;/head&gt;</span>
+</span><span class='line'><span class="nt">&lt;body&gt;</span>
+</span><span class='line'>  <span class="nt">&lt;div</span> <span class="na">ng-controller=</span><span class="s">&quot;Ctrl&quot;</span><span class="nt">&gt;</span>
+</span><span class='line'>      <span class="nt">&lt;label&gt;</span>Name: <span class="nt">&lt;label&gt;</span>
+</span><span class='line'>      <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">&quot;text&quot;</span> <span class="na">ng-model=</span><span class="s">&quot;name&quot;</span> <span class="na">placeholder=</span><span class="s">&quot;What&#39;s your name?&quot;</span> <span class="nt">/&gt;</span>
+</span><span class='line'>      <span class="nt">&lt;h1&gt;</span>Hello !<span class="nt">&lt;/h1&gt;</span>
+</span><span class='line'>      
+</span><span class='line'>  <span class="nt">&lt;/div&gt;</span>
+</span><span class='line'>  
+</span><span class='line'>  <span class="nt">&lt;script&gt;</span>
+</span><span class='line'>  <span class="kd">var</span> <span class="nx">Ctrl</span> <span class="o">=</span> <span class="kd">function</span><span class="p">(</span><span class="nx">$scope</span><span class="p">){</span>
+</span><span class='line'>      <span class="nx">$scope</span><span class="p">.</span><span class="nx">name</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span><span class="p">;</span>
+</span><span class='line'>      <span class="nx">$scope</span><span class="p">.</span><span class="nx">$watch</span><span class="p">(</span><span class="s1">&#39;name&#39;</span><span class="p">,</span> <span class="kd">function</span> <span class="p">(){</span>
+</span><span class='line'>          <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">$scope</span><span class="p">.</span><span class="nx">name</span><span class="p">);</span>
+</span><span class='line'>      <span class="p">});</span>
+</span><span class='line'>  <span class="p">}</span>
+</span><span class='line'>  <span class="nt">&lt;/script&gt;</span>
+</span><span class='line'><span class="nt">&lt;/body&gt;</span>
+</span><span class='line'><span class="nt">&lt;/html&gt;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>သိပ်ပြီးထူးထူးခြားခြားမဟုတ်ပါဘူး။$watch ကို input ထဲမှာ user ကရိုက်သမျှကို Console ထဲမှာစောင့်ကြည့်ဖို့အတွက်သုံးလိုက်တာပါ။Browser ရဲ့ inspect element ရဲ့ console မှာသွားကြည့်ရင် input ထဲမှာရိုက်သမျှကို watch လုပ်ပေးထားတာကိုတွေ့ရမှာပါ။အခုနောက်ထပ်Angular array အကြောင်းကိုဆက်ပြီးလေ့လာကြည့်ပါအုံးမယ်။</p>
+
+<figure class='code'><figcaption><span>index.html </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+</pre></td><td class='code'><pre><code class='html'><span class='line'><span class="cp">&lt;!DOCTYPE html&gt;</span>
+</span><span class='line'><span class="nt">&lt;html</span> <span class="na">ng-app</span><span class="nt">&gt;</span>
+</span><span class='line'><span class="nt">&lt;head&gt;</span>
+</span><span class='line'>  <span class="nt">&lt;meta</span> <span class="na">charset=</span><span class="s">&quot;UTF-8&quot;</span><span class="nt">&gt;</span>
+</span><span class='line'>  <span class="nt">&lt;title&gt;</span>Angular Fundamental<span class="nt">&lt;/title&gt;</span>
+</span><span class='line'>  <span class="nt">&lt;script </span><span class="na">type=</span><span class="s">&quot;text/javascript&quot;</span> <span class="na">src=</span><span class="s">&quot;js/angular.js&quot;</span><span class="nt">&gt;&lt;/script&gt;</span>
+</span><span class='line'><span class="nt">&lt;/head&gt;</span>
+</span><span class='line'><span class="nt">&lt;body&gt;</span>
+</span><span class='line'>  <span class="nt">&lt;div</span> <span class="na">ng-controller=</span><span class="s">&quot;Ctrl&quot;</span><span class="nt">&gt;</span>
+</span><span class='line'>      <span class="nt">&lt;ul&gt;</span>
+</span><span class='line'>          <span class="nt">&lt;li</span> <span class="na">ng-repeat=</span><span class="s">&quot;model in models&quot;</span><span class="nt">&gt;</span>  <span class="nt">&lt;/li&gt;</span>
+</span><span class='line'>      <span class="nt">&lt;/ul&gt;</span>
+</span><span class='line'>  <span class="nt">&lt;/div&gt;</span>
+</span><span class='line'>  
+</span><span class='line'>  <span class="nt">&lt;script&gt;</span>
+</span><span class='line'>  <span class="kd">var</span> <span class="nx">Ctrl</span> <span class="o">=</span> <span class="kd">function</span><span class="p">(</span><span class="nx">$scope</span><span class="p">){</span>
+</span><span class='line'>      <span class="nx">$scope</span><span class="p">.</span><span class="nx">models</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;May Myat Noe&#39;</span><span class="p">,</span><span class="s1">&#39;Khin Wint War&#39;</span><span class="p">,</span><span class="s1">&#39;Nang Khin Zayar&#39;</span><span class="p">,</span><span class="s1">&#39;Zun Thin Zar&#39;</span><span class="p">,</span><span class="s1">&#39;Zar Zar Htet&#39;</span><span class="p">,</span><span class="s1">&#39;Thu Zar Maung&#39;</span><span class="p">]</span>
+</span><span class='line'>  <span class="p">}</span>
+</span><span class='line'>  <span class="nt">&lt;/script&gt;</span>
+</span><span class='line'><span class="nt">&lt;/body&gt;</span>
+</span><span class='line'><span class="nt">&lt;/html&gt;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>ကျွန်တော်တို့Model တွေရဲ့ နာမည်တွေကို List နဲ့ပြပေးဖို့ ul နဲ့ li ကိုသုံးလိုက်ပါတယ်။နောက်ပြီးli ထဲမှာ <code>ng-repeat</code> မှာ <code>model in models </code>လို့ရေးထားပါတယ်။ပထမဆုံး model ဆိုတာက ကျွန်တော်တို့Data bind မှာပေးထားတဲ့ <code> </code>ကိုရည်ညွှန်းပါတယ်။ကိုယ်ကြိုက်တဲ့နာမည်တွေပေးထားလို့ပါတယ်။နောက်ထပ်models ဆိုတာကတော့ အောက်က Script မှာရေးထားတဲ့ array list က models ကိုရည်ညွှန်းပါတယ်။တစ်ခြားနာမည်တွေလညး်ပေးလို့ရပါတယ်။ကျွန်တော်တို့Browser မှာသွားစမ်းမယ်ဆိုရင် <code>$scope.models </code> မှာပေးထားခဲ့တဲ့ နာမည်တွေကို Loop လုပ်ပြီးပြပေးပါလိမ့်မယ်။Javascript လေ့လာဖူးသူတိုင်း Array တွေအကြောင်းနာလည်ပြီးသားဖြစ်မယ်လို့ထင်လို့ ဒီနေရာမှာမပြောတော့ပါဘူး။အခုနောက်ထပ်ကျွန်တော်တို့Filter အကြောင်းဆက်ရေးပါမယ်။</p>
+
+<figure class='code'><figcaption><span>index.html </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+</pre></td><td class='code'><pre><code class='html'><span class='line'><span class="cp">&lt;!DOCTYPE html&gt;</span>
+</span><span class='line'><span class="nt">&lt;html</span> <span class="na">ng-app</span><span class="nt">&gt;</span>
+</span><span class='line'><span class="nt">&lt;head&gt;</span>
+</span><span class='line'>  <span class="nt">&lt;meta</span> <span class="na">charset=</span><span class="s">&quot;UTF-8&quot;</span><span class="nt">&gt;</span>
+</span><span class='line'>  <span class="nt">&lt;title&gt;</span>Angular Fundamental<span class="nt">&lt;/title&gt;</span>
+</span><span class='line'>  <span class="nt">&lt;script </span><span class="na">type=</span><span class="s">&quot;text/javascript&quot;</span> <span class="na">src=</span><span class="s">&quot;js/angular.js&quot;</span><span class="nt">&gt;&lt;/script&gt;</span>
+</span><span class='line'><span class="nt">&lt;/head&gt;</span>
+</span><span class='line'><span class="nt">&lt;body&gt;</span>
+</span><span class='line'>  <span class="nt">&lt;div</span> <span class="na">ng-controller=</span><span class="s">&quot;Ctrl&quot;</span><span class="nt">&gt;</span>
+</span><span class='line'>      <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">&quot;search&quot;</span> <span class="na">ng-model=</span><span class="s">&quot;search&quot;</span> <span class="na">placeholder=</span><span class="s">&quot;search the models&quot;</span><span class="nt">&gt;</span>
+</span><span class='line'>      <span class="nt">&lt;ul&gt;</span>
+</span><span class='line'>          <span class="nt">&lt;li</span> <span class="na">ng-repeat=</span><span class="s">&quot;model in models | filter:search&quot;</span><span class="nt">&gt;</span>  <span class="nt">&lt;/li&gt;</span>
+</span><span class='line'>      <span class="nt">&lt;/ul&gt;</span>
+</span><span class='line'>  <span class="nt">&lt;/div&gt;</span>
+</span><span class='line'>  
+</span><span class='line'>  <span class="nt">&lt;script&gt;</span>
+</span><span class='line'>  <span class="kd">var</span> <span class="nx">Ctrl</span> <span class="o">=</span> <span class="kd">function</span><span class="p">(</span><span class="nx">$scope</span><span class="p">){</span>
+</span><span class='line'>      <span class="nx">$scope</span><span class="p">.</span><span class="nx">models</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;May Myat Noe&#39;</span><span class="p">,</span><span class="s1">&#39;Khin Wint War&#39;</span><span class="p">,</span><span class="s1">&#39;Nang Khin Zayar&#39;</span><span class="p">,</span><span class="s1">&#39;Zun Thin Zar&#39;</span><span class="p">,</span><span class="s1">&#39;Zar Zar Htet&#39;</span><span class="p">,</span><span class="s1">&#39;Thu Zar Maung&#39;</span><span class="p">]</span>
+</span><span class='line'>  <span class="p">}</span>
+</span><span class='line'>  <span class="nt">&lt;/script&gt;</span>
+</span><span class='line'><span class="nt">&lt;/body&gt;</span>
+</span><span class='line'><span class="nt">&lt;/html&gt;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>အပေါ်ကprogram မှာ input တစ်ခုထပ်ထည့်ထားပါတယ်။နောက် search ဆိုတဲ့ <code>ng-model</code> တစ်ခုထည့်ပါတယ်။နောက်ပြီးတော့input ထဲမှာရှာသမျှ ပြပေးဖို့အတွက် <code>filter:search </code>ဆိုတာကိုသုံးလိုက်တာနဲ့User ကရိုက်ပြီး ရှာသမျှ တူတာတွေကို ပြပေးပါလိမ့်မယ်။အခုတော့ ဒီလောက်နဲ့ပဲနားပါအုံးမယ်။</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/javascript-data-type/">Javascript Data Type</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2014-09-15T04:12:34+06:30'><span class='date'><span class='date-month'>Sep</span> <span class='date-day'>15</span><span class='date-suffix'>th</span>, <span class='date-year'>2014</span></span> <span class='time'>4:12 am</span></time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>ဒီနေ့တော့ javascript variable အကြောင်းတွေ စလေ့လာကြည့်ကြရအောင်။ Variable တွေကို Global variable နဲ့ Local variable ဆိုပြီးခွဲခြားထားပါတယ်။Global variable ဆိုတာကတော့ function တွေရဲ့အပြင်ဘက်မှာ ကြေငြာထားတဲ့ variable တွေကိုခေါ်ပါတယ်။သူ့ကိုလက်ရှိ Document ထဲကနေပြန်ပြီးစိတ်ကြိုက်ခေါ်သုံးလို့ရပါတယ်။Local variable ဆိုတာကတော့ function တစ်ခုထဲမှာ ကြေငြာထားတဲ့ variable တွေကိုခေါ်ပါတယ်။သူ့ကိုတော့ သက်ဆိုင်ရာ function အောက်မှာ ပြန်ခေါ်သုံးလို့ရပါတယ်။အဲဒီ function အပြင်ကနေလှမ်းခေါ်သုံးလို့မရပါဘူး။အခုဆက် ပြီးတော့ Data type တွေအကြောင်းဆက်လေ့လာကြည့်ပါမယ်။Data type သုံးမျိုးရှိပါတယ်။
+<code>
+Primary Data Type
+Composite Data Type
+Special Data Type
+</code>
+ဆိုပြီး(၃) မျိုးသတ်မှတ်ထားပါတယ်။ <code>Primary Data Type</code> ထဲမှာမှ
+<code>
+Numbers
+String
+Boolean
+</code>
+ဆိုပြီး သုံးမျိုးထပ်ခွဲထားပါတယ်။<code>Numbers Data Type</code> ဆိုတာကတော့ Number တွေပေါ့ဗျာ :P ။Number ထဲမှာလည်း ကိန်းပြည့်တွေဆိုရင် Integer လို့ခေါ်ပါတယ်။ Decimal တွေဆိုရင်တော့ Float လို့ခေါ်ပါတယ်။နောက်ပြီးတော့ String ဆိုတာကတော့ စာသားတန်ဖိုးတွေကို ခေါ်ပါတယ်။Boolean Data type မှာတော့ true/false ဆိုတဲ့ တန်ဖိုးနှစ်ခုပဲရှိပါတယ်။
+<code>Composite Data Type</code>
+Composite Data Type မှာတော့ Object နဲ့ Array တန်ဖိုးတွေပါ ပါတယ်။အဲဒီအပိုင်းကိုတော့ နောက်ပိုင်းမှာ သေသေချာချာ ထပ်ရှင်းပါမယ်။
+<code>Special Data Type</code>
+Special Data Type မှာတော့ null နဲ့ undefined ဆိုတာတွေပါ ပါတယ်။null ဆိုတာကိုတော့ တစ်ချို့က ဘာတန်ဖိုးတွေမှ မပါတဲ့ variable လို့လည်းပြောကြတယ်။နောက်တစ်ချို့တွေကလည်း number ဆိုရင် default တန်ဖိုးက (0) လို့လည်းပြောကြတယ်။Boolean မှာတော့ default အနေနဲ့ false လို့သတ်မှတ်တာတွေလည်းရှိပါတယ်။</p>
+
+<figure class='code'><figcaption><span>index.html </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+</pre></td><td class='code'><pre><code class='html'><span class='line'><span class="cp">&lt;!doctype html&gt;</span>
+</span><span class='line'><span class="nt">&lt;html</span> <span class="na">lang=</span><span class="s">&quot;en&quot;</span><span class="nt">&gt;</span>
+</span><span class='line'><span class="nt">&lt;head&gt;</span>
+</span><span class='line'>     <span class="nt">&lt;meta</span> <span class="na">charset=</span><span class="s">&quot;UTF-8&quot;</span><span class="nt">&gt;</span>
+</span><span class='line'>     <span class="nt">&lt;title&gt;</span>Javascript<span class="nt">&lt;/title&gt;</span>
+</span><span class='line'><span class="nt">&lt;/head&gt;</span>
+</span><span class='line'><span class="nt">&lt;body&gt;</span>
+</span><span class='line'>     <span class="nt">&lt;script </span><span class="na">type=</span><span class="s">&quot;text/javascript&quot;</span><span class="nt">&gt;</span>
+</span><span class='line'><span class="err"> </span>       <span class="kd">var</span> <span class="nx">x</span> <span class="o">=</span> <span class="kc">null</span><span class="p">;</span>
+</span><span class='line'><span class="err"> </span>       <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">x</span><span class="o">*</span><span class="mi">3</span><span class="p">);</span>
+</span><span class='line'><span class="err"> </span>   <span class="nt">&lt;/script&gt;</span>
+</span><span class='line'><span class="nt">&lt;/body&gt;</span>
+</span><span class='line'><span class="nt">&lt;/html&gt;</span>
+</span><span class='line'> 
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>browser မှာ right click နှိပ်ပြီး inspect element က console မှာသွားကြည့်ရင် <code>၀ </code>ဆိုတာကိုတွေ့ရပါလိမ့်မယ်။</p>
+
+<figure class='code'><figcaption><span>index.html </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+</pre></td><td class='code'><pre><code class='html'><span class='line'><span class="cp">&lt;!doctype html&gt;</span>
+</span><span class='line'><span class="nt">&lt;html</span> <span class="na">lang=</span><span class="s">&quot;en&quot;</span><span class="nt">&gt;</span>
+</span><span class='line'><span class="nt">&lt;head&gt;</span>
+</span><span class='line'>     <span class="nt">&lt;meta</span> <span class="na">charset=</span><span class="s">&quot;UTF-8&quot;</span><span class="nt">&gt;</span>
+</span><span class='line'>     <span class="nt">&lt;title&gt;</span>Javascript<span class="nt">&lt;/title&gt;</span>
+</span><span class='line'><span class="nt">&lt;/head&gt;</span>
+</span><span class='line'><span class="nt">&lt;body&gt;</span>
+</span><span class='line'>    <span class="nt">&lt;script </span><span class="na">type=</span><span class="s">&quot;text/javascript&quot;</span><span class="nt">&gt;</span>
+</span><span class='line'><span class="err"> </span>        <span class="kd">var</span> <span class="nx">x</span> <span class="o">=</span> <span class="kc">null</span><span class="p">;</span>
+</span><span class='line'><span class="err"> </span>        <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">x</span><span class="o">+</span><span class="mi">3</span><span class="p">);</span>
+</span><span class='line'><span class="err"> </span>   <span class="nt">&lt;/script&gt;</span>
+</span><span class='line'><span class="nt">&lt;/body&gt;</span>
+</span><span class='line'><span class="nt">&lt;/html&gt;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>အပေါ်က program run ပြီး inspect element က console မှာသွားကြည့်လိုက်ရင်တော့ <code>3</code> ဆိုတာကိုတွေ့ရမှာပါ။ေနာက္တစ္ခါ
+Undefined ဆိုတာကတော့ သူ့ကိုဘာတန်ဖိုးမှ မသတ်မှတ်ရသေးတဲ့ variable ကိုဆိုလိုပါတယ်။</p>
+
+<figure class='code'><figcaption><span>index.html </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+</pre></td><td class='code'><pre><code class='html'><span class='line'><span class="cp">&lt;!doctype html&gt;</span>
+</span><span class='line'><span class="nt">&lt;html</span> <span class="na">lang=</span><span class="s">&quot;en&quot;</span><span class="nt">&gt;</span>
+</span><span class='line'><span class="nt">&lt;head&gt;</span>
+</span><span class='line'>     <span class="nt">&lt;meta</span> <span class="na">charset=</span><span class="s">&quot;UTF-8&quot;</span><span class="nt">&gt;</span>
+</span><span class='line'>     <span class="nt">&lt;title&gt;</span>Javascript<span class="nt">&lt;/title&gt;</span>
+</span><span class='line'><span class="nt">&lt;/head&gt;</span>
+</span><span class='line'><span class="nt">&lt;body&gt;</span>
+</span><span class='line'>     <span class="nt">&lt;script </span><span class="na">type=</span><span class="s">&quot;text/javascript&quot;</span><span class="nt">&gt;</span>
+</span><span class='line'><span class="err"> </span>       <span class="kd">var</span> <span class="nx">x</span><span class="p">;</span>
+</span><span class='line'><span class="err"> </span>       <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;Type of x is &quot;</span> <span class="o">+</span> <span class="nx">x</span><span class="p">);</span>
+</span><span class='line'><span class="err"> </span>   <span class="nt">&lt;/script&gt;</span>
+</span><span class='line'><span class="nt">&lt;/body&gt;</span>
+</span><span class='line'><span class="nt">&lt;/html&gt;</span>
+</span><span class='line'> 
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>ဒီ program ကို run ပြီး inspect element မှာသွားကြည့်ရင်တော့ <code>Type of x is undefined</code> ဆိုတာကိုမြင်ရမှာပါ။
+ဒီနေ့တော့ဒီလောက်နဲ့ပဲနားကြရအောင်ဗျာ။နောက်နေ့တွေမှာတော့ အခု Data Type တွေကို code တွေနဲ့သေချာစမ်းပြီး လေ့လာကြပါမယ်။</p>
 </div>
   
   
@@ -324,7 +1009,7 @@
 </span><span class='line'>
 </span><span class='line'>  <span class="nt">&lt;script&gt;</span>
 </span><span class='line'>      <span class="kd">var</span> <span class="nx">Ctrl</span> <span class="o">=</span> <span class="kd">function</span><span class="p">(</span><span class="nx">$scope</span><span class="p">){</span>
-</span><span class='line'>
+</span><span class='line'>          <span class="nx">$scope</span><span class="p">.</span><span class="nx">name</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span><span class="p">;</span>
 </span><span class='line'>      <span class="p">}</span>
 </span><span class='line'>  <span class="nt">&lt;/script&gt;</span>
 </span><span class='line'><span class="nt">&lt;/body&gt;</span>
@@ -518,6 +1203,14 @@ Two waydata binding နဲ့ပတ်သက်လို့ပြောစရာ
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/blog/javascript-variable/">Javascript Variable</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/hello-ruby-2/">Hello Ruby 2</a>
+      </li>
+    
+      <li class="post">
         <a href="/blog/vim-and-plugins/">Vim and Plugins</a>
       </li>
     
@@ -526,15 +1219,7 @@ Two waydata binding နဲ့ပတ်သက်လို့ပြောစရာ
       </li>
     
       <li class="post">
-        <a href="/blog/angularjs-fundamental/">Angularjs Fundamental</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/hello-vim/">Hello Vim</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/hello-javascript/">Hello Javascript</a>
+        <a href="/blog/angularjs-fundamental-2/">Angularjs Fundamental 2</a>
       </li>
     
   </ul>

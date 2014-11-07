@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Ruby | Wanayhtun]]></title>
   <link href="http://wanay.github.io/blog/blog/categories/ruby/atom.xml" rel="self"/>
   <link href="http://wanay.github.io/blog/"/>
-  <updated>2014-11-05T06:19:27+06:30</updated>
+  <updated>2014-11-08T05:51:47+06:30</updated>
   <id>http://wanay.github.io/blog/</id>
   <author>
     <name><![CDATA[Wanayhtun]]></name>
@@ -14,12 +14,95 @@
 
   
   <entry>
+    <title type="html"><![CDATA[Hello Ruby 2]]></title>
+    <link href="http://wanay.github.io/blog/hello-ruby-2/"/>
+    <updated>2014-11-05T22:22:27+06:30</updated>
+    <id>http://wanay.github.io/blog/hello-ruby-2</id>
+    <content type="html"><![CDATA[<p>အခုကျွန်တော်တို့ နောက်ထပ်အနေနဲ့ ပေါင်း နှုတ် မြှောက် စား တွေလုပ်ကြည့်ရအောင်ပါ။ irb ထဲမှာ
+<div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>&ldquo;irb&rdquo; </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;blockquote>&lt;blockquote>&lt;p>35 + 289
+</span><span class='line'>=>324</span></code></pre></td></tr></table></div></figure></notextile></div>
+လို့ရိုက်လိုက်ရင် 324 ဆိုတာကို output ထုတ်ပေးပါလိမ့်မယ်။ဒီနေရာမှာလည်း Number တွေကို Intege data type လို့သတ်မှတ်ပါတယ်။နောက်ထပ်
+<div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>irb </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>789 – 567
+</span><span class='line'>=>222</span></code></pre></td></tr></table></div></figure></notextile></div>
+ဆိုရင်တော့ 222 ကို output ထုတ်ပေးပါလိမ့်မယ်။
+<div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>irb </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>960 * 325
+</span><span class='line'>=>312000</span></code></pre></td></tr></table></div></figure></notextile></div>
+ဒါဆိုရင်တော့ 312000 လို့ output ထွက်လာပါလိမ့်မယ်။သိပ်ထူးထူးခြားခြားမရှိလို့ နားလည်မယ်ထင်ပါတယ်။
+<div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>irb </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>20/3
+</span><span class='line'>=>6</span></code></pre></td></tr></table></div></figure></notextile></div>
+ဒီနေရာမှာ ထူးခြားတာက 20 ကို 3 နဲ့စားတဲ့နေရာမှာ 6 လို့ပဲအဖြေထွက်လာပါတယ်။ဘာကြောင့်လဲဆိုတော့ ကျွန်တော်တို့က integer  type ကိုသုံးထားတာကြောင့် integer  type ကို output ပြန်ထုတ်ပေးတာဖြစ်ပါတယ်။
+တစ်ကယ်လို့ကျွန်တော်တို့က Decimal တန်ဖိုးနဲ့လိုချင်ရင်တော့
+<div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>irb </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>20.0/3
+</span><span class='line'>=> 6.666666666666667</span></code></pre></td></tr></table></div></figure></notextile></div>
+ဒါဆိုရင်တော့ ကျွန်တော်တို့လိုချင်တဲ့ Decimal တန်ဖိုးနဲ့ output ထွက်လာပါပြီ။အဲဒီ Decimal တန်ဖိုးတွေကို Float data type လို့ခေါ်ပါတယ်။နောက်ထပ် Data type တစ်ခုဖြစ်တဲ့ Boolean ဆိုတာကတော့ true/false တန်ဖိုးတွေကိုသတ်မှတ်ပါတယ်။
+<div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>irb </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>3>4
+</span><span class='line'>=>false</span></code></pre></td></tr></table></div></figure></notextile></div>
+ဒီနေရာမှာ 3 က 4 ထက်ငယ်တဲ့အတွက် Boolean type ဖြစ်တဲ့ false ကို output ထုတ်ပေးတာပါ။
+<div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>irb </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>3&lt;4
+</span><span class='line'>=>true</span></code></pre></td></tr></table></div></figure></notextile></div>
+ဒီမှာတော့ 4 က 3 ထက်ကြီးတဲ့အတွက် true ကို output ထုတ်ပေးပါတယ်။
+ ဒါဆိုရင်တော့စိတ်ကြိုက်တစ်ခြား ပေါင်း နှုတ် မြှောက် စား တာတွေလုပ်ကြည့်လိုက်ပါ။နောက်ထပ်အနေနဲ့ Modulus ဆိုတဲ့ <code> %  </code>ကိုတော့ အကြွင်းရှာတဲ့နေရာမှာသုံးပါတယ်။
+<div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>irb </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>75%2
+</span><span class='line'>=>1</span></code></pre></td></tr></table></div></figure></notextile></div>
+75 ကို 2 နဲ့စားရင် အကြွင်း 1 ရတာကြောင့် 1 ကို output ထုတ်ပေးပါလိမ့်မယ်။နောက်တစ်ခုအနေနဲ့  Number တစ်ခုရဲ့ power ကိုရှာချင်တဲ့အခါမှာ <code> <strong> </code> ဆိုတာကိုသုံးပါတယ်။
+<div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>irb </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>2&lt;/strong>3
+</span><span class='line'>=>8</span></code></pre></td></tr></table></div></figure></notextile></div>
+2 power 3 အဖြေကိုရှာလိုက်တဲ့အခါမှာ 8 ကို output ထုတ်ပေးပါတယ်။ကျွန်တော်တို့အပေါ်မှာ သုံးခဲ့တဲ့<code>  +, -, <em>, /, %, **  </code>ဆိုတဲ့ Operator တွေကို Arithmetic operator တစ်နည်းအားဖြင့် Math operator တွေလို့ခေါ်ပါတယ်။ဒီနေရာမှာ variable ကိုသုံးပြီးတစ်ခြား assignment operator တွေကိုရှင်းပြချင်တာကြောင့် variable ဆိုတာကို တန်ဖိုးတွေကိုယာယီသိုလှောင်ထားတဲ့ ကိန်းရှင် တစ်ခုလို့လွယ်လွယ်မှတ်ထားစေချင်ပါတယ်။အခုနောက်ထပ် addition assignment ဆိုတဲ့ += အကြောင်းကိုပြောပါမယ်။
+<div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>irb </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>i = 5
+</span><span class='line'>=>5
+</span><span class='line'>i += 20
+</span><span class='line'>=>20
+</span><span class='line'>i
+</span><span class='line'>=>25</span></code></pre></td></tr></table></div></figure></notextile></div>
+ပထမဆုံး i ဆိုတဲ့ variable တန်ဖိုးကို 5 လို့သတ်မှတ်လိုက်ပါတယ်။အဲဒီ i ဆိုတဲ့ variable ထဲကိုပဲ <code>i += 20</code> ဆိုပြီး 20 ထပ်ပေါင်းထည့်လိုက်ပါတယ်။အဲဒါကြောင့်နောက်ဆုံးမှာ variable ဖြစ်တဲ့ i ကိုခေါ်လိုက်တာနဲ့ သူ့ရဲ့ တန်ဖိုးက   25 ဖြစ်သွားပါတယ်။အရမ်းလည်းမခက်ခဲတာကြောင့် တစ်ခြား <code> -=  </code> တို့  <code> </em>=  </code> နဲ့  <code> /= </code> အကြောင်းတို့ကိုဆက်မရှင်းပြတော့ပါဘူး။ကိုယ်တိုင်သာစမ်းကြည့်ကြလိုက်ကြပါ။</p></blockquote></blockquote>
+]]></content>
+  </entry>
+  
+  <entry>
     <title type="html"><![CDATA[Hello Ruby]]></title>
     <link href="http://wanay.github.io/blog/hello-ruby/"/>
     <updated>2014-10-05T04:58:15+06:30</updated>
     <id>http://wanay.github.io/blog/hello-ruby</id>
     <content type="html"><![CDATA[<p>Ruby ကိုမလေ့လာခင်တစ်ခြားလိုအပ်ချက်တွေ အများကြီးမရှိပါဘူး။HTML, CSS နဲ့ Javascript ကိုသိထားရင်စပြီးလေ့လာလို့ရပါပြီ။Ruby က Object Oriented Scripting language တစ်ခုဖြစ်ပါတယ်။Ruby ကို 2003 ခုနှစ်လောက်မှာ ဂျပန်လူမျိုး Yukihiro Matsumoto ကစတင်ပြီးဖန်တီးခဲ့ပါတယ်။သူ့ကိုတော့ Online မှာ Matz လို့လူသိများပါတယ်။ဒါပေမယ့်လည်း စစခြင်းမှာ Ruby က ဒီလောက်နာမည်မကြီးခဲ့ပါဘူး။PHP နဲ့ ASP နဲ့ကသာ Web ကိုအဓိကကြီးစိုးနေခဲ့တာပါ။2004 ခုနှစ်လောက်မှာတော့ David Heinemeir Hansson က အခုလူသိများကြတဲ့ Rails ဆိုတဲ့ Framework ကိုစတင်ဖန်တီးခဲ့ပါတယ်။Rails ဆိုတာက Ruby programming language ကိုအသုံးချပြီးဖန်တီးထားတဲ့ Ruby Framwork တစ်ခုပါ။Rails ရဲ့ MVC architecture ဟာအရမ်းကိုအောင်မြင်ခဲ့ပြီးနောက်ပိုင်းမှာ PHP Framework တစ်ချို့နဲ့ ASP ကပါပြန်ပြီးအတုယူခဲ့ကြရပါတယ်။အခုဆို PHP မှာနာမည်ကြီးနေတဲ့ Framework တစ်ခုဖြစ်တဲ့ Laravel ကလည်း Rails ကိုတုပဖန်တီးထားပါသေးတယ်။Ruby ရဲ့အားသာချက်က ရေးရတာ ပေါ့ပါးလွယ်ကူတာကြောင့် web application တစ်ခုကိုမြန်မြန်ဆန်ဆန်ဖန်တီးနိုင်ပါတယ်။ဒါကြောင့်လည်း Startup တော်တော်များများက Ruby နဲ့စကြတာများပါတယ်။Ruby မှာ Rails အပြင်နောက်ထပ်နာမည်ကြီး Framework ​​တွေရှိပါသေးတယ်။တစ်ချို့က Ruby လို့ဆိုလိုက်တာနဲ့ Rails နဲ့တွဲပြီး Ruby on Rails(ROR)လို့သာအသိများကြပါတယ်။Rails ကတစ်ကယ့်ကိုပြည့်စုံတဲ့ Framework ဆိုပေမယ့် project သေးသေးလေးတွေအတွက်တော့သိပ်အဆင်မပြေပါဘူး။ အဲဒါကြောင့် Sinatra ဆိုတဲ့ Framework ကိုလည်းလူသုံးများကြပါတယ်။အခုနောက်ပိုင်း နာမည်ကြီးနေတဲ့ Node js Framewok တစ်ခုဖြစ်တဲ့ Express js ဆိုရင်လည်း Sinatra ကိုတုပထားပါတယ်။Ruby မှာ Sinatra လိုမျိုးပေါ့ပါးတဲ့ Framework တစ်ခုဖြစ်တဲ့ Roda ဆိုတာကလည်း အခုနောက်ပိုင်း နာမည်ရလာပါတယ်။Ruby Framework တွေကိုမလေ့လာခင် Ruby ကိုအရင်လေ့လာထားမှသာ Rails နဲ့ တစ်ခြား Framework တွေလေ့လာရာမှာလွယ်ကူမှာဖြစ်ပါတယ်။။ဒီတော့ Ruby အရင်ဆုံးလေ့လာဖို့အတွက်စက်မှာ install လုပ်ပါမယ်။ဒီနေရာမှာ windows မှာ install လုပ်တာကိုထည့်မပြောတော့ပါဘူး။တစ်ကယ်တော့ Ruby ကိုစလေ့လာတော့မယ်ဆိုရင် Mac မှာဖြစ်ဖြစ် Linux Distro တစ်ခုခုမှာလေ့လာတာအကောင်းဆုံးပါပဲ။အခုအရင်ဆုံး RVM လို့ခေါ်တဲ့ Ruby Version Manager ကို အရင်ဆုံး install လုပ်ပါမယ်။အဲဒီတော့ Terminal မှာ အခုလိုရိုက်လိုက်ပါ။
- <div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>install rvm and ruby </span></figcaption>
+<div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>&ldquo;install rvm and ruby&rdquo; </span></figcaption>
 <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class=''><span class='line'>curl –sSL &lt;a href="https://get.rvm.io">https://get.rvm.io&lt;/a> | bash –s stable &ndash;ruby</span></code></pre></td></tr></table></div></figure></notextile></div>
 အခုဆိုရင်ကျွန်တော်တို့ စက်မှာ rvm နဲ့ ruby ကို install လုပ်ပြီးသွားပါပြီ။ဟမ် အဲလောက်တောင်လွယ်လား ဆိုရင်ဟုတ်ပါတယ်။အဲလောက်ကိုလွယ်ပါတယ်။

@@ -3,6 +3,18 @@
   
   
   <url>
+    <loc>http://wanay.github.io/blog/javascript-variable/</loc>
+    <lastmod>2014-11-06T04:05:45+06:30</lastmod>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>http://wanay.github.io/blog/hello-ruby-2/</loc>
+    <lastmod>2014-11-05T22:22:27+06:30</lastmod>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
     <loc>http://wanay.github.io/blog/vim-and-plugins/</loc>
     <lastmod>2014-10-21T11:15:25+06:30</lastmod>
     <priority>0.8</priority>
@@ -11,6 +23,18 @@
   <url>
     <loc>http://wanay.github.io/blog/hello-ruby/</loc>
     <lastmod>2014-10-05T04:58:15+06:30</lastmod>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>http://wanay.github.io/blog/angularjs-fundamental-2/</loc>
+    <lastmod>2014-09-20T04:15:01+06:30</lastmod>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>http://wanay.github.io/blog/javascript-data-type/</loc>
+    <lastmod>2014-09-15T04:12:34+06:30</lastmod>
     <priority>0.8</priority>
   </url>
   
@@ -35,14 +59,14 @@
   
   <url>
     <loc>http://wanay.github.io/blog/blog/archives/</loc>
-    <lastmod>2014-11-05T06:19:27+06:30</lastmod>
+    <lastmod>2014-11-08T05:51:47+06:30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
     <loc>http://wanay.github.io/blog/</loc>
-    <lastmod>2014-11-05T06:19:27+06:30</lastmod>
+    <lastmod>2014-11-08T05:51:47+06:30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
