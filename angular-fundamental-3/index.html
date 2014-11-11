@@ -126,7 +126,7 @@
 </span><span class='line'><span class="nt">&lt;/head&gt;</span>
 </span><span class='line'><span class="nt">&lt;body&gt;</span>
 </span><span class='line'>  <span class="nt">&lt;div</span> <span class="na">ng-controller=</span><span class="s">&quot;Ctrl&quot;</span><span class="nt">&gt;</span>
-</span><span class='line'>      <span class="nt">&lt;span&gt;</span>   models <span class="nt">&lt;span&gt;</span>
+</span><span class='line'>      <span class="nt">&lt;span&gt;</span> {{models.length}} models <span class="nt">&lt;span&gt;</span>
 </span><span class='line'>      <span class="nt">&lt;form</span> <span class="na">name=</span><span class="s">&quot;myform&quot;</span> <span class="na">ng-submit=</span><span class="s">&quot;add()&quot;</span><span class="nt">&gt;</span>
 </span><span class='line'>          <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">&quot;search&quot;</span> <span class="na">ng-model=</span><span class="s">&quot;search&quot;</span> <span class="na">placeholder=</span><span class="s">&quot;search the models&quot;</span> <span class="na">required</span><span class="nt">&gt;</span>
 </span><span class='line'>          <span class="nt">&lt;button</span> <span class="na">ng-disabled=</span><span class="s">&quot;myform.$invalid&quot;</span><span class="nt">&gt;</span>Add<span class="nt">&lt;/button&gt;</span>
@@ -189,11 +189,14 @@
 
 
 <p><code>$scope.models.push($scope.search);</code> ဆိုတာကတော့ search ထဲမှာရိုက်ထားတာတွေကို models array ထဲကို javascript ရဲ့ push method သုံးပြီးထည့်ပေးလိုက်တာပါ။ <code>$scope.search = &ldquo;&rdquo;;</code> ဆိုတဲ့ string အလွတ်တစ်ခုထည့်ထားတာကတော့ search ထဲမှာကျန်ခဲ့တဲ့ string တွေကိုရှင်းပစ်ဖို့အတွက်သုံးထားတာပါ။
-အပေါ်ဘက်က html တွေကိုပြန်ကြည့်ရင် list ထဲက model တွေကို count လုပ်ဖို့အတွက် javascript ရဲ့ length ဆိုတဲ့ method ကိုသုံးပြီး data bind လုပ်ထားပါတယ်။
-<code>
-<span>  models <span>
-</code>
-နောက်တစ်ခါ form ရဲ့ name ကို myform လို့ပေးထားပြီးတော့ <code>ng-submit </code>မှာတော့ script ထဲမှာရေးထားခဲ့တဲ့ <code>add()</code> ဆိုတဲ့ function ကိုလှမ်းခေါ်ထားပါတယ်။နောက်ပြီးတော့ input ထဲမှာဘာမှမထည့်ပဲ add လုပ်လို့မရအောင်<code> required </code>ဆိုတာထည့်ထားပါတယ်။button ထဲမှာတော့ <code>ng-disabled=&ldquo;myform.$invalid&rdquo;</code> လို့ထည့်ထားတဲ့အတွက် input ထဲမှာဘာတန်ဖိုးမှမထည့်ထားရင် add ဆိုတဲ့ button ကမှိန်နေပါလိမ့်မယ်။</p>
+အပေါ်ဘက်က html တွေကိုပြန်ကြည့်ရင် list ထဲက model တွေကို count လုပ်ဖို့အတွက် javascript ရဲ့ length ဆိုတဲ့ method ကိုသုံးပြီး data bind လုပ်ထားပါတယ်။</p>
+
+<div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>span </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>&lt;span> {{models.length}} models &lt;span></span></code></pre></td></tr></table></div></figure></notextile></div>
+
+
+<p>နောက်တစ်ခါ form ရဲ့ name ကို myform လို့ပေးထားပြီးတော့ <code>ng-submit </code>မှာတော့ script ထဲမှာရေးထားခဲ့တဲ့ <code>add()</code> ဆိုတဲ့ function ကိုလှမ်းခေါ်ထားပါတယ်။နောက်ပြီးတော့ input ထဲမှာဘာမှမထည့်ပဲ add လုပ်လို့မရအောင်<code> required </code>ဆိုတာထည့်ထားပါတယ်။button ထဲမှာတော့ <code>ng-disabled=&ldquo;myform.$invalid&rdquo;</code> လို့ထည့်ထားတဲ့အတွက် input ထဲမှာဘာတန်ဖိုးမှမထည့်ထားရင် add ဆိုတဲ့ button ကမှိန်နေပါလိမ့်မယ်။</p>
 
 <div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>form </span></figcaption>
 <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
@@ -248,7 +251,7 @@
 
 <span class="categories">
   
-    <a class='category' href='/blog/blog/categories/angular/'>angular</a>
+    <a class='category' href='/blog/blog/categories/angularjs/'>angularjs</a>
   
 </span>
 

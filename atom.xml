@@ -4,7 +4,7 @@
   <title><![CDATA[Wanayhtun]]></title>
   <link href="http://wanay.github.io/blog/atom.xml" rel="self"/>
   <link href="http://wanay.github.io/blog/"/>
-  <updated>2014-11-11T22:03:26+06:30</updated>
+  <updated>2014-11-11T22:41:47+06:30</updated>
   <id>http://wanay.github.io/blog/</id>
   <author>
     <name><![CDATA[Wanayhtun]]></name>
@@ -60,7 +60,7 @@
 </span><span class='line'><span class="nt">&lt;/head&gt;</span>
 </span><span class='line'><span class="nt">&lt;body&gt;</span>
 </span><span class='line'>  <span class="nt">&lt;div</span> <span class="na">ng-controller=</span><span class="s">&quot;Ctrl&quot;</span><span class="nt">&gt;</span>
-</span><span class='line'>      <span class="nt">&lt;span&gt;</span>   models <span class="nt">&lt;span&gt;</span>
+</span><span class='line'>      <span class="nt">&lt;span&gt;</span> {{models.length}} models <span class="nt">&lt;span&gt;</span>
 </span><span class='line'>      <span class="nt">&lt;form</span> <span class="na">name=</span><span class="s">&quot;myform&quot;</span> <span class="na">ng-submit=</span><span class="s">&quot;add()&quot;</span><span class="nt">&gt;</span>
 </span><span class='line'>          <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">&quot;search&quot;</span> <span class="na">ng-model=</span><span class="s">&quot;search&quot;</span> <span class="na">placeholder=</span><span class="s">&quot;search the models&quot;</span> <span class="na">required</span><span class="nt">&gt;</span>
 </span><span class='line'>          <span class="nt">&lt;button</span> <span class="na">ng-disabled=</span><span class="s">&quot;myform.$invalid&quot;</span><span class="nt">&gt;</span>Add<span class="nt">&lt;/button&gt;</span>
@@ -123,11 +123,14 @@
 
 
 <p><code>$scope.models.push($scope.search);</code> ဆိုတာကတော့ search ထဲမှာရိုက်ထားတာတွေကို models array ထဲကို javascript ရဲ့ push method သုံးပြီးထည့်ပေးလိုက်တာပါ။ <code>$scope.search = &ldquo;&rdquo;;</code> ဆိုတဲ့ string အလွတ်တစ်ခုထည့်ထားတာကတော့ search ထဲမှာကျန်ခဲ့တဲ့ string တွေကိုရှင်းပစ်ဖို့အတွက်သုံးထားတာပါ။
-အပေါ်ဘက်က html တွေကိုပြန်ကြည့်ရင် list ထဲက model တွေကို count လုပ်ဖို့အတွက် javascript ရဲ့ length ဆိုတဲ့ method ကိုသုံးပြီး data bind လုပ်ထားပါတယ်။
-<code>
-<span>  models <span>
-</code>
-နောက်တစ်ခါ form ရဲ့ name ကို myform လို့ပေးထားပြီးတော့ <code>ng-submit </code>မှာတော့ script ထဲမှာရေးထားခဲ့တဲ့ <code>add()</code> ဆိုတဲ့ function ကိုလှမ်းခေါ်ထားပါတယ်။နောက်ပြီးတော့ input ထဲမှာဘာမှမထည့်ပဲ add လုပ်လို့မရအောင်<code> required </code>ဆိုတာထည့်ထားပါတယ်။button ထဲမှာတော့ <code>ng-disabled=&ldquo;myform.$invalid&rdquo;</code> လို့ထည့်ထားတဲ့အတွက် input ထဲမှာဘာတန်ဖိုးမှမထည့်ထားရင် add ဆိုတဲ့ button ကမှိန်နေပါလိမ့်မယ်။</p>
+အပေါ်ဘက်က html တွေကိုပြန်ကြည့်ရင် list ထဲက model တွေကို count လုပ်ဖို့အတွက် javascript ရဲ့ length ဆိုတဲ့ method ကိုသုံးပြီး data bind လုပ်ထားပါတယ်။</p>
+
+<figure class='code'><figcaption><span>span </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>&lt;span> {{models.length}} models &lt;span></span></code></pre></td></tr></table></div></figure>
+
+
+<p>နောက်တစ်ခါ form ရဲ့ name ကို myform လို့ပေးထားပြီးတော့ <code>ng-submit </code>မှာတော့ script ထဲမှာရေးထားခဲ့တဲ့ <code>add()</code> ဆိုတဲ့ function ကိုလှမ်းခေါ်ထားပါတယ်။နောက်ပြီးတော့ input ထဲမှာဘာမှမထည့်ပဲ add လုပ်လို့မရအောင်<code> required </code>ဆိုတာထည့်ထားပါတယ်။button ထဲမှာတော့ <code>ng-disabled=&ldquo;myform.$invalid&rdquo;</code> လို့ထည့်ထားတဲ့အတွက် input ထဲမှာဘာတန်ဖိုးမှမထည့်ထားရင် add ဆိုတဲ့ button ကမှိန်နေပါလိမ့်မယ်။</p>
 
 <figure class='code'><figcaption><span>form </span></figcaption>
 <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
@@ -664,10 +667,10 @@
 </span><span class='line'>  <span class="nt">&lt;div</span> <span class="na">ng-controller=</span><span class="s">&quot;Ctrl&quot;</span><span class="nt">&gt;</span>
 </span><span class='line'>      <span class="nt">&lt;label&gt;</span>Name: <span class="nt">&lt;label&gt;</span>
 </span><span class='line'>      <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">&quot;text&quot;</span> <span class="na">ng-model=</span><span class="s">&quot;name&quot;</span> <span class="na">placeholder=</span><span class="s">&quot;What&#39;s your name?&quot;</span> <span class="nt">/&gt;</span>
-</span><span class='line'>      <span class="nt">&lt;h1&gt;</span>Hello !<span class="nt">&lt;/h1&gt;</span>
+</span><span class='line'>      <span class="nt">&lt;h1&gt;</span>Hello {{ name }}!<span class="nt">&lt;/h1&gt;</span>
 </span><span class='line'>      <span class="nt">&lt;label&gt;</span>Age: <span class="nt">&lt;label&gt;</span>
 </span><span class='line'>      <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">&quot;number&quot;</span> <span class="na">ng-model=</span><span class="s">&quot;age&quot;</span> <span class="na">placeholder=</span><span class="s">&quot;How old are you?&quot;</span> <span class="nt">/&gt;</span>
-</span><span class='line'>      <span class="nt">&lt;h2&gt;</span>You are  years old!<span class="nt">&lt;/h1&gt;</span>
+</span><span class='line'>      <span class="nt">&lt;h2&gt;</span>You are {{ age*2 }} years old!<span class="nt">&lt;/h1&gt;</span>
 </span><span class='line'>  <span class="nt">&lt;/div&gt;</span>
 </span><span class='line'>  
 </span><span class='line'>  <span class="nt">&lt;script&gt;</span>
@@ -721,7 +724,7 @@
 </span><span class='line'>  <span class="nt">&lt;div</span> <span class="na">ng-controller=</span><span class="s">&quot;Ctrl&quot;</span><span class="nt">&gt;</span>
 </span><span class='line'>      <span class="nt">&lt;label&gt;</span>Name: <span class="nt">&lt;label&gt;</span>
 </span><span class='line'>      <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">&quot;text&quot;</span> <span class="na">ng-model=</span><span class="s">&quot;name&quot;</span> <span class="na">placeholder=</span><span class="s">&quot;What&#39;s your name?&quot;</span> <span class="nt">/&gt;</span>
-</span><span class='line'>      <span class="nt">&lt;h1&gt;</span>Hello !<span class="nt">&lt;/h1&gt;</span>
+</span><span class='line'>      <span class="nt">&lt;h1&gt;</span>Hello {{ name }}! <span class="nt">&lt;/h1&gt;</span>
 </span><span class='line'>      
 </span><span class='line'>  <span class="nt">&lt;/div&gt;</span>
 </span><span class='line'>  
@@ -772,7 +775,7 @@
 </span><span class='line'><span class="nt">&lt;body&gt;</span>
 </span><span class='line'>  <span class="nt">&lt;div</span> <span class="na">ng-controller=</span><span class="s">&quot;Ctrl&quot;</span><span class="nt">&gt;</span>
 </span><span class='line'>      <span class="nt">&lt;ul&gt;</span>
-</span><span class='line'>          <span class="nt">&lt;li</span> <span class="na">ng-repeat=</span><span class="s">&quot;model in models&quot;</span><span class="nt">&gt;</span>  <span class="nt">&lt;/li&gt;</span>
+</span><span class='line'>          <span class="nt">&lt;li</span> <span class="na">ng-repeat=</span><span class="s">&quot;model in models&quot;</span><span class="nt">&gt;</span> {{model}} <span class="nt">&lt;/li&gt;</span>
 </span><span class='line'>      <span class="nt">&lt;/ul&gt;</span>
 </span><span class='line'>  <span class="nt">&lt;/div&gt;</span>
 </span><span class='line'>  
@@ -822,7 +825,7 @@
 </span><span class='line'>  <span class="nt">&lt;div</span> <span class="na">ng-controller=</span><span class="s">&quot;Ctrl&quot;</span><span class="nt">&gt;</span>
 </span><span class='line'>      <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">&quot;search&quot;</span> <span class="na">ng-model=</span><span class="s">&quot;search&quot;</span> <span class="na">placeholder=</span><span class="s">&quot;search the models&quot;</span><span class="nt">&gt;</span>
 </span><span class='line'>      <span class="nt">&lt;ul&gt;</span>
-</span><span class='line'>          <span class="nt">&lt;li</span> <span class="na">ng-repeat=</span><span class="s">&quot;model in models | filter:search&quot;</span><span class="nt">&gt;</span>  <span class="nt">&lt;/li&gt;</span>
+</span><span class='line'>          <span class="nt">&lt;li</span> <span class="na">ng-repeat=</span><span class="s">&quot;model in models | filter:search&quot;</span><span class="nt">&gt;</span> {{model}} <span class="nt">&lt;/li&gt;</span>
 </span><span class='line'>      <span class="nt">&lt;/ul&gt;</span>
 </span><span class='line'>  <span class="nt">&lt;/div&gt;</span>
 </span><span class='line'>  
@@ -1068,7 +1071,7 @@ Undefined ဆိုတာကတော့ သူ့ကိုဘာတန်ဖိ
 </span><span class='line'>  <span class="nt">&lt;div</span> <span class="na">ng-controller=</span><span class="s">&quot;Ctrl&quot;</span><span class="nt">&gt;</span>
 </span><span class='line'>      <span class="nt">&lt;label&gt;</span>Name: <span class="nt">&lt;label&gt;</span>
 </span><span class='line'>      <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">&quot;text&quot;</span> <span class="na">ng-model=</span><span class="s">&quot;name&quot;</span> <span class="na">placeholder=</span><span class="s">&quot;What&#39;s your name?&quot;</span> <span class="nt">/&gt;</span>
-</span><span class='line'>      <span class="nt">&lt;h1&gt;</span> Hello  !<span class="nt">&lt;/h1&gt;</span>
+</span><span class='line'>      <span class="nt">&lt;h1&gt;</span> Hello  {{ name}} !<span class="nt">&lt;/h1&gt;</span>
 </span><span class='line'>  <span class="nt">&lt;/div&gt;</span>
 </span><span class='line'>
 </span><span class='line'>  <span class="nt">&lt;script&gt;</span>
